@@ -1,0 +1,646 @@
+---
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - acl
+      
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - apt-utils
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - attr
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - autoconf
+      
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - bind9utils
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - binutils
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - bison
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - build-essential
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - ccache
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - chrpath
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - curl
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - debhelper
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - dnsutils
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - docbook-xml
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - docbook-xsl
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - flex
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - gcc
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - gdb
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - git
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - glusterfs-common
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - gzip
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - heimdal-multidev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - hostname
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - htop
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - krb5-config
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - krb5-kdc
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - krb5-user
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - lcov
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libacl1-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libarchive-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libattr1-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libavahi-common-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libblkid-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libbsd-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libcap-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libcephfs-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libcups2-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libdbus-1-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libglib2.0-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libgnutls28-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libgpgme11-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libicu-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libjansson-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libjs-jquery
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libjson-perl
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libkrb5-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libldap2-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - liblmdb-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libncurses5-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libpam0g-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libparse-yapp-perl
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libpcap-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libpopt-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libreadline-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libsystemd-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libtasn1-bin
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libtasn1-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - libunwind-dev
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - lmdb-utils
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - locales
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - lsb-release
+
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - make
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - mawk
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - mingw-w64
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - patch
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - perl
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - perl-modules
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - pkg-config
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - procps
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - psmisc
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-cryptography
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-dbg
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-dev
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-dnspython
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-gpg
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-iso8601
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-markdown
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-matplotlib
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-pexpect
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-pyasn1
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - python3-setproctitle
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - rng-tools
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - rsync
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - sed
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - sudo
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - tar
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - tree
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - uuid-dev
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - wget
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - xfslibs-dev
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - xsltproc
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - zlib1g-dev
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - chrony
+
+- name: Init | Installing Required Packages
+  apt:
+    state: present
+    name:
+      - bind9
+
+- name: Copy Veeam Repository
+  copy:
+     src: veeam-release-deb_1.0.7_amd64.deb
+     dest: /tmp/veeam-release-deb_1.0.7_amd64.deb
+
+
+- name: Install Veeam Backup
+  shell: |
+        dpkg -i /tmp/veeam-release-deb_1.0.7_amd64.deb
+        apt update
+        apt install veeam -y
+        rm -f /tmp/veeam-release-deb_1.0.7_amd64.deb
+

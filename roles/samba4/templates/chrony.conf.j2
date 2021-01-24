@@ -1,0 +1,19 @@
+server 0.br.pool.ntp.org iburst
+server 1.br.pool.ntp.org iburst
+server 2.br.pool.ntp.org iburst
+server 3.br.pool.ntp.org iburst
+
+driftfile /var/lib/chrony/drift
+makestep 1.0 3
+rtcsync
+#local stratum 10
+keyfile /etc/chrony/chrony.keys
+logdir /var/log/chrony
+log measurements statistics tracking
+maxupdateskew 100.0
+hwclockfile /etc/adjtime
+
+bindcmdaddress {{ samba.ip }}
+allow {{ samba.ip_subnet }}/{{ samba.cidr_subnet }}
+
+ntpsigndsocket  /var/lib/samba/ntp_signd/

@@ -1,0 +1,27 @@
+---
+
+
+- name: "All | Init"
+  import_tasks: common.yml
+  tags: 
+    - all
+    - install
+    - init
+
+- name: "Master | Install"
+  import_tasks: install.yml
+  tags: 
+    - all
+    - install
+
+- name: "Master | Provision Domain"
+  import_tasks: provision.yml
+  tags: 
+    - all
+    - provision
+
+- name: "Master | Configuration"
+  import_tasks: configuration.yml
+  tags: 
+    - all
+    - provision

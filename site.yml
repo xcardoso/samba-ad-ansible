@@ -1,0 +1,8 @@
+---
+
+
+- hosts: all
+  gather_facts: true
+  user: root
+  roles:
+    - { role: samba4 }

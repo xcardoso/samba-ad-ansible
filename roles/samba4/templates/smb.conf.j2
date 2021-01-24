@@ -1,0 +1,58 @@
+# Global parameters
+[global]
+        netbios name = {{ server.hostname|upper }}
+        realm = {{ samba.realm|upper }}
+        server role = active directory domain controller
+        workgroup = {{ samba.domain|upper }}
+        bind interfaces only = yes
+        interfaces = lo {{ samba.network_interface }}
+	ldap server require strong auth = no
+        server services = s3fs, rpc, nbt, wrepl, ldap, cldap, kdc, drepl, winbindd, ntp_signd, kcc, dnsupdate
+        idmap_ldb:use rfc2307 = yes
+        vfs objects = acl_xattr, recycle, full_audit, dfs_samba4
+
+{% if (fileserver.lixeira.enabled) == true :%}
+################# Configura Lixeira para o Samba4 #################
+        recycle:keeptree = yes
+        recycle:versions = yes
+        recycle:repository = {{ fileserver.dir }}/Lixeira/%U
+        recycle:exclude = *.tmp, *.log, *.obj, ~*.*, *.bak
+        recycle:exclude_dir = tmp, cache, profiles
+{% endif %}
+
+{% if (fileserver.auditoria.enabled) == true :%}
+################# AUDITORIA #################
+
+        log file = {{ fileserver.dir }}/Auditoria/auditoria.txt
+        max log size = {{ fileserver.auditoria.max_log_size }}
+        strict sync = yes
+        sync always = yes
+        full_audit:sucess  = mkdir, rmdir, rename, unlink
+        full_audit:prefix = %u|%I|%m|%p|%P|%S
+
+{% endif %}
+################# COMPARTILHAMENTOS #################
+
+[netlogon]
+        path = /var/lib/samba/sysvol/{{ samba.realm }}/scripts
+        read only = No
+        browseable = no
+
+[sysvol]
+        path = /var/lib/samba/sysvol
+        read only = No
+        browseable = no
+
+{% if (fileserver.usuarios.enabled) == true :%}
+[Usuarios]
+        path = {{ fileserver.dir }}/Usuarios
+        read only = no
+        browseable = no
+{% endif %}
+
+{% if (fileserver.lixeira.enabled) == true :%}
+[Lixeira]
+        path = {{ fileserver.dir }}/Lixeira
+        read only = no
+        browseable = no
+{% endif %}

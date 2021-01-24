@@ -1,0 +1,15 @@
+[libdefaults]
+        default_realm = {{ samba.realm|upper }}
+        dns_lookup_realm = false
+        dns_lookup_kdc = true
+
+[realms]
+CONTOSO.LOCAL = {
+        default_domain = {{ samba.realm }}
+}
+
+[domain_realm]
+        {{ server.hostname }} = {{ samba.realm|upper }}
+
+[kdc]
+  check-ticket-addresses = false

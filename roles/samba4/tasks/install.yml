@@ -1,0 +1,25 @@
+---
+
+- name: Install | Extract samba.tar.gz /opt/
+  unarchive:
+    src: samba.tar.gz
+    dest: /opt/
+
+- name: Install | Compile Samba 1/3 (Please wait it's take a while...)
+  command: chdir=/opt/samba-4.13.3/ ./configure -j 4 --progress --prefix /usr --enable-fhs --sysconfdir=/etc --localstatedir=/var --with-privatedir=/var/lib/samba/private --with-piddir=/var/run/samba --with-automount --datadir=/usr/share --with-lockdir=/var/run/samba --with-statedir=/var/lib/samba --with-cachedir=/var/cache/samba --with-systemd
+
+- name: Install | Compile Samba 2/3 (Please wait it's take a while...)
+  command: chdir=/opt/samba-4.13.3/ make -j4
+
+- name: Install | Compile Samba 3/3 (Please wait it's take a while...)
+  command: chdir=/opt/samba-4.13.3/ make install
+
+- name: Install | Create Systemctl samba 1/2
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - {src: 'samba.service.j2',dest: '/etc/systemd/system/samba.service'}
+
+- name: Install | Create systemctl samba 2/2
+  command: systemctl daemon-reload

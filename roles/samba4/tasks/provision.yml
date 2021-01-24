@@ -1,0 +1,9 @@
+---
+
+- name: Provision | Remove smb.conf
+  file:
+    path: /etc/samba/smb.conf
+    state: absent
+
+- name: Provision | Domain Provision
+  command: 'samba-tool domain provision --realm={{ samba.realm|upper }} --domain={{ samba.domain|upper }} --adminpass={{ samba.administrator_pass }} --server-role=dc --dns-backend=BIND9_DLZ --option="interfaces=lo {{ samba.network_interface }}" --option="bind interfaces only=yes" --use-rfc2307'

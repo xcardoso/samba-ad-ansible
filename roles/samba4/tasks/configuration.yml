@@ -1,0 +1,187 @@
+---
+
+- name: Configuration | Disable IPv6 1/2
+  lineinfile:
+    path: /etc/sysctl.conf
+    insertbefore: EOF
+    line: |
+        net.ipv6.conf.all.disable_ipv6 = 1
+        net.ipv6.conf.default.disable_ipv6 = 1
+        net.ipv6.conf.lo.disable_ipv6 = 1
+
+- name: Configuration | Disable IPv6 2/2
+  command: sysctl -p
+
+- name: Configuration | Configure /etc/krb5.conf
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: root
+    group: bind
+  with_items:
+    - {src: 'krb5.conf.j2', dest: '/etc/krb5.conf'}
+
+- name: Configuration | Configure NTP Chrony 1/3
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    owner: root
+    group: bind
+  with_items:
+    - {src: 'chrony.conf.j2', dest: '/etc/chrony/chrony.conf'}
+
+- name: Configuration | Configure NTP Chrony 2/3
+  file:
+    path: /var/lib/samba/ntp_signd/
+    state: directory
+    mode: '0750'
+    owner: root
+    group: _chrony
+
+- name: Configuration | Configure NTP Chrony 3/3
+  systemd:
+    name: chronyd
+    enabled: yes
+    state: restarted
+
+- name: Configuration | Configure Bind9 1/3
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - {src: 'named.conf.j2', dest: '/etc/bind/named.conf'}
+    - {src: 'named.conf.local.j2', dest: '/etc/bind/named.conf.local'}
+    - {src: 'named.conf.options.j2', dest: '/etc/bind/named.conf.options'}
+
+- name: Configuration | Configure Bind9 2/3
+  lineinfile:
+    path: /etc/default/bind9
+    state: present
+    regexp: 'OPTIONS="-u bind"'
+    line: 'OPTIONS="-u bind -4"'
+
+- name: Configuration | Configure Bind9 3/3
+  systemd:
+    name: bind9
+    enabled: yes
+    state: restarted
+
+- name: Configuration | Configure /etc/hosts 1/2
+  lineinfile:
+    path: /etc/hosts
+    insertbefore: EOF
+    line: "{{ samba.ip }} {{ server.hostname }} {{ server.hostname }}.{{ samba.realm }}"
+
+- name: Configuration | Configure /etc/hosts 2/2
+  replace:
+    path: /etc/hosts
+    regexp: '127.0.1.1'
+    replace: '#127.0.1.1'
+
+- name: Configuration | Configure /etc/nsswitch.conf 1/2
+  lineinfile:
+    path: /etc/nsswitch.conf
+    state: present
+    regexp: 'passwd:         files systemd'
+    line: 'passwd:         files winbind systemd'
+
+- name: Configuration | Configure /etc/nsswitch.conf 2/2
+  lineinfile:
+    path: /etc/nsswitch.conf
+    state: present
+    regexp: 'group:          files systemd'
+    line: 'group:          files winbind systemd'
+
+- name: Configuration | Create folder {{ fileserver.dir }}
+  file:
+    path: "{{ fileserver.dir }}"
+    state: directory
+  when:
+    - fileserver.enabled
+
+
+- name: Configuration | Create folder {{ fileserver.dir }}/Lixeira
+  file:
+    path: "{{ fileserver.dir }}/Lixera"
+    state: directory
+  when:
+    - fileserver.lixeira.enabled and fileserver.enabled
+
+- name: Configuration | Create folder {{ fileserver.dir }}/Usuarios
+  file:
+    path: "{{ fileserver.dir }}/Usuarios"
+    state: directory
+  when:
+    - fileserver.usuarios.enabled and fileserver.enabled
+
+- name: Configuration | Create folder {{ fileserver.dir }}/Backup
+  file:
+    path: "{{ item }}"
+    state: directory
+  loop:
+    - "{{ fileserver.dir }}/Backup"
+    - "{{ fileserver.dir }}/Backup/SAMBA4"
+    - "{{ fileserver.dir }}/Backup/LOGS"
+  when:
+    - fileserver.enabled
+
+- name: Configuration | Create folder {{ fileserver.dir }}/Auditoria
+  file:
+    path: "{{ fileserver.dir }}/Auditoria"
+    state: directory
+  when:
+    - fileserver.auditoria.enabled and fileserver.enabled
+
+- name: Configuration | Configure /etc/samba/smb.conf
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - {src: 'smb.conf.j2', dest: '/etc/samba/smb.conf'}
+
+- name: Configuration | Configure samba systemd 1/2
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - {src: 'samba.service.j2', dest: '/etc/systemd/system/samba.service'}
+
+- name: Configuration | Configure samba systemd 2/2
+  systemd:
+    name: samba
+    enabled: yes
+    state: restarted
+    daemon_reload: yes
+
+- name: Configuration | Enable bind9 systemd and start it
+  systemd:
+    name: bind9
+    daemon_reload: yes
+    enabled: yes
+    state: restarted
+
+- name: Configuration | Update DNS Records
+  command: samba_dnsupdate --all-names --verbose
+
+- name: Configuration | RPC Rights Grant 1/2
+  expect:
+    command: net rpc rights grant "{{ samba.domain|upper }}\Domain Admins" SeDiskOperatorPrivilege -U "{{ samba.domain|upper }}\Administrator"
+    responses:
+      (?i)password: "{{ samba.administrator_pass }}"
+  # you don't want to show passwords in your logs
+  no_log: true
+
+- name: Configuration | RPC Rights Grant 2/2
+  expect:
+    command: net rpc rights grant "{{ samba.domain|upper }}\Domain Admins" SePrintOperatorPrivilege -U "{{ samba.domain|upper }}\Administrator"
+    responses:
+      (?i)password: "{{ samba.administrator_pass }}"
+  # you don't want to show passwords in your logs
+  no_log: true
+
+- name: Configuration | Change "{{ fileserver.dir }}" owner
+  file:
+    path: "{{ fileserver.dir }}"
+    owner: root
+    group: "Domain Admins"
+    recurse: yes
