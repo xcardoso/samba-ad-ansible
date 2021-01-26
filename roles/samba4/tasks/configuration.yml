@@ -44,6 +44,8 @@
     enabled: yes
     state: restarted
 
+
+
 - name: Configuration | Configure Bind9 1/3
   template:
     src: "{{ item.src }}"
@@ -52,6 +54,7 @@
     - {src: 'named.conf.j2', dest: '/etc/bind/named.conf'}
     - {src: 'named.conf.local.j2', dest: '/etc/bind/named.conf.local'}
     - {src: 'named.conf.options.j2', dest: '/etc/bind/named.conf.options'}
+    - {src: 'resolv.conf.j2', dest: '/etc/resolv.conf'}
 
 - name: Configuration | Configure Bind9 2/3
   lineinfile:

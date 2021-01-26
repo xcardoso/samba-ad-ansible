@@ -1,0 +1,57 @@
+---
+
+server:
+  # Default: {{ ansible_nodename }} | Your master hostname without FQDN
+  hostname: "{{ ansible_nodename }}" 
+
+fileserver: 
+  # Enable File Server (true/false)
+  enabled: true 
+
+  # Directory of your FileServer
+  dir: /Servidor
+   
+  lixeira: 
+    # Enable Trash (true/false)
+    enabled: true 
+
+  usuarios: 
+    # Enable Users Folder (true/false)
+    enabled: true 
+
+# Enable Audit (true/false)
+  auditoria:
+    enabled: true 
+    
+    # Log rotation of audit
+    max_log_size: "1048576" 
+
+samba:
+  # Enable Logs of Samba4 (true/false)
+  logs:
+    enabled: true
+  
+  # Domain Name FQDN to provisioning
+  realm: "contoso.local" 
+
+  # Worgkroup
+  domain: "contoso" 
+
+  # Password of Administrator
+  administrator_pass: "S3Nh@fOrTruEs" 
+  
+  # Default: {{ ansible_default_ipv4.interface }} | Your interface name
+  network_interface: "{{ ansible_default_ipv4.interface }}" 
+
+  # Default: {{ ansible_default_ipv4.address }} | Your IPV4 Default
+  ip: "{{ ansible_default_ipv4.address }}"
+
+  # Default: {{ ansible_default_ipv4.network }} | Your subnet 255.255.255.0
+  ip_subnet: "{{ ansible_default_ipv4.network }}"
+
+  # Network CIDR
+  cidr_subnet: "24"
+
+  # DNS1 and DN2 Forwarder for Bind9
+  dns1_forwarder: "8.8.8.8" 
+  dns2_forwarder: "8.8.4.4"

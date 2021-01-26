@@ -1,6 +1,5 @@
 ---
 
-
 - name: "All | Init"
   import_tasks: common.yml
   tags: 
@@ -24,4 +23,4 @@
   import_tasks: configuration.yml
   tags: 
     - all
-    - provision
+    - configuration

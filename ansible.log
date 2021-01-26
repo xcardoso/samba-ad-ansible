@@ -1,0 +1,1051 @@
+2021-01-26 14:07:17,959 p=28930 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:07:18,783 p=28930 u=root |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/yuri/Documents/GIT/samba-ad-ansible/roles/samba4/tasks/main.yml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Print all available facts
+  ^ here
+
+2021-01-26 14:09:04,529 p=29165 u=root |   [WARNING]: Unable to parse /home/yuri/Documents/GIT/samba-ad-ansible/hosts as an inventory source
+
+2021-01-26 14:09:04,529 p=29165 u=root |   [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2021-01-26 14:09:04,531 p=29165 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:09:04,533 p=29165 u=root |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2021-01-26 14:09:04,533 p=29165 u=root |   [WARNING]: Could not match supplied host pattern, ignoring: 192.168.15.9
+
+2021-01-26 14:09:24,119 p=29203 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:09:24,121 p=29203 u=root |   [WARNING]: Could not match supplied host pattern, ignoring: 192.168.15.9
+
+2021-01-26 14:09:24,121 p=29203 u=root |   [WARNING]: No hosts matched, nothing to do
+
+2021-01-26 14:09:31,912 p=29209 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:09:35,022 p=29209 u=root |  servidor-pdc | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.15.9"
+        ],
+        "ansible_all_ipv6_addresses": [],
+        "ansible_apparmor": {
+            "status": "enabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "12/01/2006",
+        "ansible_bios_version": "VirtualBox",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.19.0-13-amd64",
+            "quiet": true,
+            "ro": true,
+            "root": "UUID=90e76294-e745-40e8-8deb-770cac6b7862"
+        },
+        "ansible_date_time": {
+            "date": "2021-01-26",
+            "day": "26",
+            "epoch": "1611680974",
+            "hour": "14",
+            "iso8601": "2021-01-26T17:09:34Z",
+            "iso8601_basic": "20210126T140934736096",
+            "iso8601_basic_short": "20210126T140934",
+            "iso8601_micro": "2021-01-26T17:09:34.736174Z",
+            "minute": "09",
+            "month": "01",
+            "second": "34",
+            "time": "14:09:34",
+            "tz": "-03",
+            "tz_offset": "-0300",
+            "weekday": "terça",
+            "weekday_number": "2",
+            "weeknumber": "04",
+            "year": "2021"
+        },
+        "ansible_default_ipv4": {
+            "address": "192.168.15.9",
+            "alias": "enp0s3",
+            "broadcast": "192.168.15.255",
+            "gateway": "192.168.15.1",
+            "interface": "enp0s3",
+            "macaddress": "08:00:27:14:15:fa",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "192.168.15.0",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {
+                "sda": [
+                    "ata-VBOX_HARDDISK_VB7e764992-f752a96e"
+                ],
+                "sda1": [
+                    "ata-VBOX_HARDDISK_VB7e764992-f752a96e-part1"
+                ],
+                "sda2": [
+                    "ata-VBOX_HARDDISK_VB7e764992-f752a96e-part2"
+                ],
+                "sda5": [
+                    "ata-VBOX_HARDDISK_VB7e764992-f752a96e-part5"
+                ],
+                "sr0": [
+                    "ata-VBOX_CD-ROM_VB2-01700376"
+                ]
+            },
+            "labels": {},
+            "masters": {},
+            "uuids": {
+                "sda1": [
+                    "90e76294-e745-40e8-8deb-770cac6b7862"
+                ],
+                "sda5": [
+                    "46b44fd8-2db3-46b4-b85c-5a0c3cea9d7d"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "sda": {
+                "holders": [],
+                "host": "SATA controller: Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02)",
+                "links": {
+                    "ids": [
+                        "ata-VBOX_HARDDISK_VB7e764992-f752a96e"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "VBOX HARDDISK",
+                "partitions": {
+                    "sda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "ata-VBOX_HARDDISK_VB7e764992-f752a96e-part1"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "90e76294-e745-40e8-8deb-770cac6b7862"
+                            ]
+                        },
+                        "sectors": "37206016",
+                        "sectorsize": 512,
+                        "size": "17.74 GB",
+                        "start": "2048",
+                        "uuid": "90e76294-e745-40e8-8deb-770cac6b7862"
+                    },
+                    "sda2": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "ata-VBOX_HARDDISK_VB7e764992-f752a96e-part2"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "2",
+                        "sectorsize": 512,
+                        "size": "1.00 KB",
+                        "start": "37210110",
+                        "uuid": null
+                    },
+                    "sda5": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "ata-VBOX_HARDDISK_VB7e764992-f752a96e-part5"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "46b44fd8-2db3-46b4-b85c-5a0c3cea9d7d"
+                            ]
+                        },
+                        "sectors": "1998848",
+                        "sectorsize": 512,
+                        "size": "976.00 MB",
+                        "start": "37210112",
+                        "uuid": "46b44fd8-2db3-46b4-b85c-5a0c3cea9d7d"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "39209664",
+                "sectorsize": "512",
+                "size": "18.70 GB",
+                "support_discard": "0",
+                "vendor": "ATA",
+                "virtual": 1
+            },
+            "sr0": {
+                "holders": [],
+                "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+                "links": {
+                    "ids": [
+                        "ata-VBOX_CD-ROM_VB2-01700376"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "CD-ROM",
+                "partitions": {},
+                "removable": "1",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097151",
+                "sectorsize": "512",
+                "size": "1024.00 MB",
+                "support_discard": "0",
+                "vendor": "VBOX",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "Debian",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/os-release",
+        "ansible_distribution_file_variety": "Debian",
+        "ansible_distribution_major_version": "10",
+        "ansible_distribution_release": "buster",
+        "ansible_distribution_version": "10.7",
+        "ansible_dns": {
+            "nameservers": [
+                "8.8.8.8",
+                "8.8.4.4"
+            ]
+        },
+        "ansible_domain": "contoso.local",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_enp0s3": {
+            "active": true,
+            "device": "enp0s3",
+            "ipv4": {
+                "address": "192.168.15.9",
+                "broadcast": "192.168.15.255",
+                "netmask": "255.255.255.0",
+                "network": "192.168.15.0"
+            },
+            "macaddress": "08:00:27:14:15:fa",
+            "module": "e1000",
+            "mtu": 1500,
+            "pciid": "0000:00:03.0",
+            "promisc": false,
+            "speed": 1000,
+            "type": "ether"
+        },
+        "ansible_env": {
+            "HOME": "/root",
+            "LANG": "pt_BR.UTF-8",
+            "LANGUAGE": "pt_BR:pt:en",
+            "LOGNAME": "root",
+            "MAIL": "/var/mail/root",
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "PWD": "/root",
+            "SHELL": "/bin/bash",
+            "SHLVL": "0",
+            "SSH_CLIENT": "192.168.15.49 56490 22",
+            "SSH_CONNECTION": "192.168.15.49 56490 192.168.15.9 22",
+            "USER": "root",
+            "XDG_RUNTIME_DIR": "/run/user/0",
+            "XDG_SESSION_CLASS": "user",
+            "XDG_SESSION_ID": "3",
+            "XDG_SESSION_TYPE": "tty",
+            "_": "/bin/sh"
+        },
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "servidor-pdc.contoso.local",
+        "ansible_hostname": "servidor-pdc",
+        "ansible_interfaces": [
+            "lo",
+            "enp0s3"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.19.0-13-amd64",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "host",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0"
+            },
+            "mtu": 65536,
+            "promisc": false,
+            "type": "loopback"
+        },
+        "ansible_local": {},
+        "ansible_lsb": {
+            "codename": "buster",
+            "description": "Debian GNU/Linux 10 (buster)",
+            "id": "Debian",
+            "major_release": "10",
+            "release": "10"
+        },
+        "ansible_lvm": {
+            "lvs": {},
+            "pvs": {},
+            "vgs": {}
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "8a07af957f0b493c906391a10ba9e7d5",
+        "ansible_memfree_mb": 727,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 874,
+                "used": 113
+            },
+            "real": {
+                "free": 727,
+                "total": 987,
+                "used": 260
+            },
+            "swap": {
+                "cached": 0,
+                "free": 975,
+                "total": 975,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 987,
+        "ansible_mounts": [
+            {
+                "block_available": 3292463,
+                "block_size": 4096,
+                "block_total": 4544952,
+                "block_used": 1252489,
+                "device": "/dev/sda1",
+                "fstype": "ext4",
+                "inode_available": 1054936,
+                "inode_total": 1163264,
+                "inode_used": 108328,
+                "mount": "/",
+                "options": "rw,relatime,errors=remount-ro",
+                "size_available": 13485928448,
+                "size_total": 18616123392,
+                "uuid": "90e76294-e745-40e8-8deb-770cac6b7862"
+            }
+        ],
+        "ansible_nodename": "servidor-pdc",
+        "ansible_os_family": "Debian",
+        "ansible_pkg_mgr": "apt",
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 1,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 1,
+        "ansible_product_name": "VirtualBox",
+        "ansible_product_serial": "0",
+        "ansible_product_uuid": "238b5b08-bb72-864a-b6ca-3083adc25058",
+        "ansible_product_version": "1.2",
+        "ansible_python": {
+            "executable": "/usr/bin/python",
+            "has_sslcontext": true,
+            "type": "CPython",
+            "version": {
+                "major": 2,
+                "micro": 16,
+                "minor": 7,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                2,
+                7,
+                16,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "2.7.16",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        },
+        "ansible_selinux_python_present": false,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKDrRhRwHw/m1nSJcsUNC4TBUOGBJ5uGK+ddeUIDrUgBYmaGKRHrk891Qip38UgjYgFcD8K9fWPT2azf9Y+G/4k=",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIOyYQAGKf3HUf/Z4mNE9jMlcv3CzjxEwWWDcRyGNS1vI",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDFkJTdI2qKHMKLaHykUNktxdmBEJILuRa0iMlLw7kWeGdMAziv5tCw86DeFNXB3iU+2rtdmRIiojalCdPGUaq0zRwndLO71bPqaIbesuCn5kquuvWzO2ntELyqwn06td4k2rpQeEQ1q/l7VzTmWKPsCUdXXewz9Uy+3lij4x06jeLvMObzHKYwa2zpKQ3MDVDQhO3vGoQY7uJNNj5DOOMDYbAirWw1+StmRRoiR8ibxnT5g236KXpNmBlXPmwNiL4jhdHqC41QwgQF83qYUgVCeRPsNrD6rOLBeu3TXIKYxU74tbI2Hc/GosVqV8fQbu1a2CEToaa8TKXMjMJFFS75",
+        "ansible_swapfree_mb": 975,
+        "ansible_swaptotal_mb": 975,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_dac_read_search",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_linux_immutable",
+            "cap_net_bind_service",
+            "cap_net_broadcast",
+            "cap_net_admin",
+            "cap_net_raw",
+            "cap_ipc_lock",
+            "cap_ipc_owner",
+            "cap_sys_module",
+            "cap_sys_rawio",
+            "cap_sys_chroot",
+            "cap_sys_ptrace",
+            "cap_sys_pacct",
+            "cap_sys_admin",
+            "cap_sys_boot",
+            "cap_sys_nice",
+            "cap_sys_resource",
+            "cap_sys_time",
+            "cap_sys_tty_config",
+            "cap_mknod",
+            "cap_lease",
+            "cap_audit_write",
+            "cap_audit_control",
+            "cap_setfcap",
+            "cap_mac_override",
+            "cap_mac_admin",
+            "cap_syslog",
+            "cap_wake_alarm",
+            "cap_block_suspend",
+            "cap_audit_read+ep"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "innotek GmbH",
+        "ansible_uptime_seconds": 288,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "virtualbox",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2021-01-26 14:36:59,265 p=320 u=root |  ERROR! You must specify a playbook file to run
+2021-01-26 14:37:17,307 p=401 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:37:18,100 p=401 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:37:18,147 p=401 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 14:37:18,976 p=401 u=root |  ok: [servidor-pdc]
+2021-01-26 14:37:18,985 p=401 u=root |  TASK [samba4 : Init | Installing Required Packages] ***************************************************************************************************
+2021-01-26 14:37:20,296 p=401 u=root |  ok: [servidor-pdc]
+2021-01-26 14:37:20,305 p=401 u=root |  TASK [samba4 : Init | Installing Required Packages] ***************************************************************************************************
+2021-01-26 14:37:20,978 p=401 u=root |  ok: [servidor-pdc]
+2021-01-26 14:37:20,991 p=401 u=root |  TASK [samba4 : Init | Installing Required Packages] ***************************************************************************************************
+2021-01-26 14:37:21,689 p=401 u=root |  ok: [servidor-pdc]
+2021-01-26 14:37:21,698 p=401 u=root |  TASK [samba4 : Init | Installing Required Packages] ***************************************************************************************************
+2021-01-26 14:37:22,366 p=401 u=root |  ok: [servidor-pdc]
+2021-01-26 14:37:22,375 p=401 u=root |  TASK [samba4 : Init | Installing Required Packages] ***************************************************************************************************
+2021-01-26 14:37:23,070 p=401 u=root |  ok: [servidor-pdc]
+2021-01-26 14:37:23,079 p=401 u=root |  TASK [samba4 : Init | Installing Required Packages] ***************************************************************************************************
+2021-01-26 14:37:23,524 p=401 u=root |   [ERROR]: User interrupted execution
+
+2021-01-26 14:38:08,446 p=577 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:38:08,834 p=577 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:38:08,876 p=577 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 14:38:09,720 p=577 u=root |  ok: [servidor-pdc]
+2021-01-26 14:38:09,735 p=577 u=root |  TASK [samba4 : Provision | Remove smb.conf] ***********************************************************************************************************
+2021-01-26 14:38:10,070 p=577 u=root |  ok: [servidor-pdc]
+2021-01-26 14:38:10,180 p=577 u=root |  TASK [samba4 : Provision | Domain Provision] **********************************************************************************************************
+2021-01-26 14:38:10,232 p=577 u=root |  fatal: [servidor-pdc]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'ipaddr' is undefined\n\nThe error appears to have been in '/home/yuri/Documents/GIT/samba-ad-ansible/roles/samba4/tasks/provision.yml': line 8, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Provision | Domain Provision\n  ^ here\n"}
+2021-01-26 14:38:10,234 p=577 u=root |  	to retry, use: --limit @/home/yuri/Documents/GIT/samba-ad-ansible/site.retry
+
+2021-01-26 14:38:10,235 p=577 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 14:38:10,235 p=577 u=root |  servidor-pdc               : ok=2    changed=0    unreachable=0    failed=1   
+2021-01-26 14:40:57,167 p=1748 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:40:57,638 p=1748 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:40:57,682 p=1748 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 14:40:58,478 p=1748 u=root |  ok: [servidor-pdc]
+2021-01-26 14:40:58,489 p=1748 u=root |  TASK [samba4 : Provision | Remove smb.conf] ***********************************************************************************************************
+2021-01-26 14:40:58,772 p=1748 u=root |  ok: [servidor-pdc]
+2021-01-26 14:40:58,781 p=1748 u=root |  TASK [samba4 : Provision | Domain Provision] **********************************************************************************************************
+2021-01-26 14:40:58,805 p=1748 u=root |  fatal: [servidor-pdc]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'ipaddr' is undefined\n\nThe error appears to have been in '/home/yuri/Documents/GIT/samba-ad-ansible/roles/samba4/tasks/provision.yml': line 8, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Provision | Domain Provision\n  ^ here\n"}
+2021-01-26 14:40:58,807 p=1748 u=root |  	to retry, use: --limit @/home/yuri/Documents/GIT/samba-ad-ansible/site.retry
+
+2021-01-26 14:40:58,807 p=1748 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 14:40:58,808 p=1748 u=root |  servidor-pdc               : ok=2    changed=0    unreachable=0    failed=1   
+2021-01-26 14:41:48,380 p=1824 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:41:48,770 p=1824 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:41:48,827 p=1824 u=root |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/home/yuri/Documents/GIT/samba-ad-ansible/environments/1-master/group_vars/all/master_configuration.yml': line 55, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  # Default: {{ ipaddr('/prefix') }} | CIDR
+  ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2021-01-26 14:42:19,651 p=1857 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:42:20,028 p=1857 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:42:20,084 p=1857 u=root |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/home/yuri/Documents/GIT/samba-ad-ansible/environments/1-master/group_vars/all/master_configuration.yml': line 56, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  # DNS1 and DN2 Forwarder for Bind9
+  ^ here
+
+2021-01-26 14:42:52,016 p=1950 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:42:52,405 p=1950 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:42:52,445 p=1950 u=root |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/home/yuri/Documents/GIT/samba-ad-ansible/environments/1-master/group_vars/all/master_configuration.yml': line 57, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+(specified line no longer in file, maybe it changed?)
+2021-01-26 14:43:20,552 p=1994 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:43:20,945 p=1994 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:43:20,984 p=1994 u=root |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/home/yuri/Documents/GIT/samba-ad-ansible/environments/1-master/group_vars/all/master_configuration.yml': line 57, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+(specified line no longer in file, maybe it changed?)
+2021-01-26 14:44:07,635 p=2052 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:44:08,017 p=2052 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:44:08,059 p=2052 u=root |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/home/yuri/Documents/GIT/samba-ad-ansible/environments/1-master/group_vars/all/master_configuration.yml': line 57, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+(specified line no longer in file, maybe it changed?)
+2021-01-26 14:44:43,247 p=2087 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:44:43,636 p=2087 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:44:43,680 p=2087 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 14:44:44,549 p=2087 u=root |  ok: [servidor-pdc]
+2021-01-26 14:44:44,563 p=2087 u=root |  TASK [samba4 : Provision | Remove smb.conf] ***********************************************************************************************************
+2021-01-26 14:44:44,798 p=2087 u=root |  ok: [servidor-pdc]
+2021-01-26 14:44:44,812 p=2087 u=root |  TASK [samba4 : Provision | Domain Provision] **********************************************************************************************************
+2021-01-26 14:45:54,390 p=2087 u=root |  changed: [servidor-pdc]
+2021-01-26 14:45:54,399 p=2087 u=root |  TASK [samba4 : Configuration | Disable IPv6 1/2] ******************************************************************************************************
+2021-01-26 14:45:54,683 p=2087 u=root |  changed: [servidor-pdc]
+2021-01-26 14:45:54,693 p=2087 u=root |  TASK [samba4 : Configuration | Disable IPv6 2/2] ******************************************************************************************************
+2021-01-26 14:45:54,854 p=2087 u=root |  changed: [servidor-pdc]
+2021-01-26 14:45:54,886 p=2087 u=root |  TASK [samba4 : Configuration | Configure /etc/krb5.conf] **********************************************************************************************
+2021-01-26 14:45:55,747 p=2087 u=root |  changed: [servidor-pdc] => (item={'src': 'krb5.conf.j2', 'dest': '/etc/krb5.conf'})
+2021-01-26 14:45:55,757 p=2087 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 1/3] **********************************************************************************************
+2021-01-26 14:45:55,899 p=2087 u=root |  failed: [servidor-pdc] (item={'src': 'chrony.conf.j2', 'dest': '/etc/chrony/chrony.conf'}) => {"changed": false, "item": {"dest": "/etc/chrony/chrony.conf", "src": "chrony.conf.j2"}, "msg": "AnsibleUndefinedVariable: 'mynetwork' is undefined"}
+2021-01-26 14:45:55,902 p=2087 u=root |  	to retry, use: --limit @/home/yuri/Documents/GIT/samba-ad-ansible/site.retry
+
+2021-01-26 14:45:55,902 p=2087 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 14:45:55,902 p=2087 u=root |  servidor-pdc               : ok=6    changed=4    unreachable=0    failed=1   
+2021-01-26 14:47:00,893 p=2335 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:47:01,283 p=2335 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:47:01,327 p=2335 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 14:47:02,193 p=2335 u=root |  ok: [servidor-pdc]
+2021-01-26 14:47:02,207 p=2335 u=root |  TASK [samba4 : Provision | Remove smb.conf] ***********************************************************************************************************
+2021-01-26 14:47:02,449 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:02,462 p=2335 u=root |  TASK [samba4 : Provision | Domain Provision] **********************************************************************************************************
+2021-01-26 14:47:49,455 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:49,464 p=2335 u=root |  TASK [samba4 : Configuration | Disable IPv6 1/2] ******************************************************************************************************
+2021-01-26 14:47:49,722 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:49,733 p=2335 u=root |  TASK [samba4 : Configuration | Disable IPv6 2/2] ******************************************************************************************************
+2021-01-26 14:47:49,877 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:49,892 p=2335 u=root |  TASK [samba4 : Configuration | Configure /etc/krb5.conf] **********************************************************************************************
+2021-01-26 14:47:50,386 p=2335 u=root |  ok: [servidor-pdc] => (item={'src': 'krb5.conf.j2', 'dest': '/etc/krb5.conf'})
+2021-01-26 14:47:50,396 p=2335 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 1/3] **********************************************************************************************
+2021-01-26 14:47:50,910 p=2335 u=root |  changed: [servidor-pdc] => (item={'src': 'chrony.conf.j2', 'dest': '/etc/chrony/chrony.conf'})
+2021-01-26 14:47:50,924 p=2335 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 2/3] **********************************************************************************************
+2021-01-26 14:47:51,069 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:51,079 p=2335 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 3/3] **********************************************************************************************
+2021-01-26 14:47:51,766 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:51,775 p=2335 u=root |  TASK [samba4 : Configuration | Configure Bind9 1/3] ***************************************************************************************************
+2021-01-26 14:47:52,222 p=2335 u=root |  changed: [servidor-pdc] => (item={'src': 'named.conf.j2', 'dest': '/etc/bind/named.conf'})
+2021-01-26 14:47:52,595 p=2335 u=root |  changed: [servidor-pdc] => (item={'src': 'named.conf.local.j2', 'dest': '/etc/bind/named.conf.local'})
+2021-01-26 14:47:52,943 p=2335 u=root |  changed: [servidor-pdc] => (item={'src': 'named.conf.options.j2', 'dest': '/etc/bind/named.conf.options'})
+2021-01-26 14:47:52,953 p=2335 u=root |  TASK [samba4 : Configuration | Configure Bind9 2/3] ***************************************************************************************************
+2021-01-26 14:47:53,091 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:53,104 p=2335 u=root |  TASK [samba4 : Configuration | Configure Bind9 3/3] ***************************************************************************************************
+2021-01-26 14:47:53,954 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:53,964 p=2335 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 1/2] **********************************************************************************************
+2021-01-26 14:47:54,138 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:54,148 p=2335 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 2/2] **********************************************************************************************
+2021-01-26 14:47:54,412 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:54,422 p=2335 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 1/2] **************************************************************************************
+2021-01-26 14:47:54,614 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:54,623 p=2335 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 2/2] **************************************************************************************
+2021-01-26 14:47:54,789 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:54,801 p=2335 u=root |  TASK [samba4 : Configuration | Create folder /Servidor] ***********************************************************************************************
+2021-01-26 14:47:54,944 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:54,956 p=2335 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Lixeira] ***************************************************************************************
+2021-01-26 14:47:55,129 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:55,144 p=2335 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Usuarios] **************************************************************************************
+2021-01-26 14:47:55,319 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:55,330 p=2335 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Backup] ****************************************************************************************
+2021-01-26 14:47:55,516 p=2335 u=root |  changed: [servidor-pdc] => (item=/Servidor/Backup)
+2021-01-26 14:47:55,665 p=2335 u=root |  changed: [servidor-pdc] => (item=/Servidor/Backup/SAMBA4)
+2021-01-26 14:47:55,805 p=2335 u=root |  changed: [servidor-pdc] => (item=/Servidor/Backup/LOGS)
+2021-01-26 14:47:55,819 p=2335 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Auditoria] *************************************************************************************
+2021-01-26 14:47:55,995 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:56,007 p=2335 u=root |  TASK [samba4 : Configuration | Configure /etc/samba/smb.conf] *****************************************************************************************
+2021-01-26 14:47:56,466 p=2335 u=root |  changed: [servidor-pdc] => (item={'src': 'smb.conf.j2', 'dest': '/etc/samba/smb.conf'})
+2021-01-26 14:47:56,478 p=2335 u=root |  TASK [samba4 : Configuration | Configure samba systemd 1/2] *******************************************************************************************
+2021-01-26 14:47:56,811 p=2335 u=root |  ok: [servidor-pdc] => (item={'src': 'samba.service.j2', 'dest': '/etc/systemd/system/samba.service'})
+2021-01-26 14:47:56,820 p=2335 u=root |  TASK [samba4 : Configuration | Configure samba systemd 2/2] *******************************************************************************************
+2021-01-26 14:47:57,769 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:47:57,783 p=2335 u=root |  TASK [samba4 : Configuration | Enable bind9 systemd and start it] *************************************************************************************
+2021-01-26 14:48:01,133 p=2335 u=root |  changed: [servidor-pdc]
+2021-01-26 14:48:01,148 p=2335 u=root |  TASK [samba4 : Configuration | Update DNS Records] ****************************************************************************************************
+2021-01-26 14:48:45,793 p=2335 u=root |  fatal: [servidor-pdc]: FAILED! => {"changed": true, "cmd": ["samba_dnsupdate", "--all-names", "--verbose"], "delta": "0:00:44.286004", "end": "2021-01-26 14:48:45.802545", "msg": "non-zero return code", "rc": 29, "start": "2021-01-26 14:48:01.516541", "stderr": "ERROR: Record already exist; record could not be added. zone[contoso.local] name[servidor-pdc]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[@]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[@]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[@]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.dc]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._tcp]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._udp]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_kerberos._tcp.dc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kpasswd._tcp]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kpasswd._udp]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.dc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._tcp.Default-First-Site-Name._sites]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_kerberos._tcp.Default-First-Site-Name._sites.dc]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.pdc]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[gc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_gc._tcp]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.gc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_gc._tcp.Default-First-Site-Name._sites]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.gc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[DomainDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.DomainDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[ForestDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.ForestDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones]", "stderr_lines": ["ERROR: Record already exist; record could not be added. zone[contoso.local] name[servidor-pdc]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[@]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[@]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[@]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.dc]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._tcp]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._udp]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_kerberos._tcp.dc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kpasswd._tcp]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kpasswd._udp]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.dc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._tcp.Default-First-Site-Name._sites]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_kerberos._tcp.Default-First-Site-Name._sites.dc]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.pdc]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[gc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_gc._tcp]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.gc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_gc._tcp.Default-First-Site-Name._sites]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.gc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[DomainDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.DomainDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[ForestDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.ForestDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones]"], "stdout": "IPs: ['192.168.15.9']\nneed cache add: A servidor-pdc.contoso.local 192.168.15.9\nforce update: A servidor-pdc.contoso.local 192.168.15.9\nneed cache add: CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local\nforce update: CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local\nneed cache add: NS contoso.local servidor-pdc.contoso.local\nforce update: NS contoso.local servidor-pdc.contoso.local\nneed cache add: NS _msdcs.contoso.local servidor-pdc.contoso.local\nforce update: NS _msdcs.contoso.local servidor-pdc.contoso.local\nneed cache add: A contoso.local 192.168.15.9\nforce update: A contoso.local 192.168.15.9\nneed cache add: SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389\nneed cache add: SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nneed cache add: SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nneed cache add: SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88\nneed cache add: SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88\nneed cache add: SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nneed cache add: SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464\nforce update: SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464\nneed cache add: SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464\nforce update: SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464\nneed cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389\nneed cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nneed cache add: SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88\nneed cache add: SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nneed cache add: SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389\nneed cache add: A gc._msdcs.contoso.local 192.168.15.9\nforce update: A gc._msdcs.contoso.local 192.168.15.9\nneed cache add: SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268\nforce update: SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268\nneed cache add: SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nforce update: SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nneed cache add: SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268\nforce update: SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268\nneed cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nneed cache add: A DomainDnsZones.contoso.local 192.168.15.9\nforce update: A DomainDnsZones.contoso.local 192.168.15.9\nneed cache add: SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nneed cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nneed cache add: A ForestDnsZones.contoso.local 192.168.15.9\nforce update: A ForestDnsZones.contoso.local 192.168.15.9\nneed cache add: SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nneed cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\n29 DNS updates and 0 DNS deletes needed\nFailed to get Kerberos credentials, falling back to samba-tool: kinit for SERVIDOR-PDC$@CONTOSO.LOCAL failed (Cannot contact any KDC for requested realm)\n\nupdate (samba-tool): A servidor-pdc.contoso.local 192.168.15.9\nCalling samba-tool dns for A servidor-pdc.contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'servidor-pdc', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A servidor-pdc.contoso.local 192.168.15.9\nupdate (samba-tool): CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local\nCalling samba-tool dns for CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b', 'CNAME', 'servidor-pdc.contoso.local']\nFailed 'samba-tool dns' based update of CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local\nupdate (samba-tool): NS contoso.local servidor-pdc.contoso.local\nCalling samba-tool dns for NS contoso.local servidor-pdc.contoso.local (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '@', 'NS', 'servidor-pdc.contoso.local']\nFailed 'samba-tool dns' based update of NS contoso.local servidor-pdc.contoso.local\nupdate (samba-tool): NS _msdcs.contoso.local servidor-pdc.contoso.local\nCalling samba-tool dns for NS _msdcs.contoso.local servidor-pdc.contoso.local (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '@', 'NS', 'servidor-pdc.contoso.local']\nFailed 'samba-tool dns' based update of NS _msdcs.contoso.local servidor-pdc.contoso.local\nupdate (samba-tool): A contoso.local 192.168.15.9\nCalling samba-tool dns for A contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '@', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A contoso.local 192.168.15.9\nupdate (samba-tool): SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.dc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._tcp', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._udp', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_kerberos._tcp.dc', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464\nCalling samba-tool dns for SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kpasswd._tcp', 'SRV', 'servidor-pdc.contoso.local 464 0 100']\nFailed 'samba-tool dns' based update of SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464\nupdate (samba-tool): SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464\nCalling samba-tool dns for SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kpasswd._udp', 'SRV', 'servidor-pdc.contoso.local 464 0 100']\nFailed 'samba-tool dns' based update of SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.dc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_kerberos._tcp.Default-First-Site-Name._sites.dc', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.pdc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): A gc._msdcs.contoso.local 192.168.15.9\nCalling samba-tool dns for A gc._msdcs.contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', 'gc', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A gc._msdcs.contoso.local 192.168.15.9\nupdate (samba-tool): SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268\nCalling samba-tool dns for SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_gc._tcp', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']\nFailed 'samba-tool dns' based update of SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268\nupdate (samba-tool): SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nCalling samba-tool dns for SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.gc', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nupdate (samba-tool): SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268\nCalling samba-tool dns for SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_gc._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']\nFailed 'samba-tool dns' based update of SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.gc', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nupdate (samba-tool): A DomainDnsZones.contoso.local 192.168.15.9\nCalling samba-tool dns for A DomainDnsZones.contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'DomainDnsZones', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A DomainDnsZones.contoso.local 192.168.15.9\nupdate (samba-tool): SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.DomainDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): A ForestDnsZones.contoso.local 192.168.15.9\nCalling samba-tool dns for A ForestDnsZones.contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'ForestDnsZones', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A ForestDnsZones.contoso.local 192.168.15.9\nupdate (samba-tool): SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.ForestDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nRebuilding cache at /var/lib/samba/private/dns_update_cache\nAdding A servidor-pdc.contoso.local 192.168.15.9 to dns_update_cache\nAdding CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local to dns_update_cache\nAdding NS contoso.local servidor-pdc.contoso.local to dns_update_cache\nAdding NS _msdcs.contoso.local servidor-pdc.contoso.local to dns_update_cache\nAdding A contoso.local 192.168.15.9 to dns_update_cache\nAdding SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464 to dns_update_cache\nAdding SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding A gc._msdcs.contoso.local 192.168.15.9 to dns_update_cache\nAdding SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache\nAdding SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache\nAdding SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache\nAdding A DomainDnsZones.contoso.local 192.168.15.9 to dns_update_cache\nAdding SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding A ForestDnsZones.contoso.local 192.168.15.9 to dns_update_cache\nAdding SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nFailed update of 29 entries", "stdout_lines": ["IPs: ['192.168.15.9']", "need cache add: A servidor-pdc.contoso.local 192.168.15.9", "force update: A servidor-pdc.contoso.local 192.168.15.9", "need cache add: CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local", "force update: CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local", "need cache add: NS contoso.local servidor-pdc.contoso.local", "force update: NS contoso.local servidor-pdc.contoso.local", "need cache add: NS _msdcs.contoso.local servidor-pdc.contoso.local", "force update: NS _msdcs.contoso.local servidor-pdc.contoso.local", "need cache add: A contoso.local 192.168.15.9", "force update: A contoso.local 192.168.15.9", "need cache add: SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389", "need cache add: SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "need cache add: SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "need cache add: SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88", "need cache add: SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88", "need cache add: SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "need cache add: SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464", "force update: SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464", "need cache add: SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464", "force update: SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464", "need cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389", "need cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "need cache add: SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88", "need cache add: SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "need cache add: SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389", "need cache add: A gc._msdcs.contoso.local 192.168.15.9", "force update: A gc._msdcs.contoso.local 192.168.15.9", "need cache add: SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268", "force update: SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268", "need cache add: SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "force update: SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "need cache add: SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268", "force update: SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268", "need cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "need cache add: A DomainDnsZones.contoso.local 192.168.15.9", "force update: A DomainDnsZones.contoso.local 192.168.15.9", "need cache add: SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "need cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "need cache add: A ForestDnsZones.contoso.local 192.168.15.9", "force update: A ForestDnsZones.contoso.local 192.168.15.9", "need cache add: SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "need cache add: SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "29 DNS updates and 0 DNS deletes needed", "Failed to get Kerberos credentials, falling back to samba-tool: kinit for SERVIDOR-PDC$@CONTOSO.LOCAL failed (Cannot contact any KDC for requested realm)", "", "update (samba-tool): A servidor-pdc.contoso.local 192.168.15.9", "Calling samba-tool dns for A servidor-pdc.contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'servidor-pdc', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A servidor-pdc.contoso.local 192.168.15.9", "update (samba-tool): CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local", "Calling samba-tool dns for CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b', 'CNAME', 'servidor-pdc.contoso.local']", "Failed 'samba-tool dns' based update of CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local", "update (samba-tool): NS contoso.local servidor-pdc.contoso.local", "Calling samba-tool dns for NS contoso.local servidor-pdc.contoso.local (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '@', 'NS', 'servidor-pdc.contoso.local']", "Failed 'samba-tool dns' based update of NS contoso.local servidor-pdc.contoso.local", "update (samba-tool): NS _msdcs.contoso.local servidor-pdc.contoso.local", "Calling samba-tool dns for NS _msdcs.contoso.local servidor-pdc.contoso.local (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '@', 'NS', 'servidor-pdc.contoso.local']", "Failed 'samba-tool dns' based update of NS _msdcs.contoso.local servidor-pdc.contoso.local", "update (samba-tool): A contoso.local 192.168.15.9", "Calling samba-tool dns for A contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '@', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A contoso.local 192.168.15.9", "update (samba-tool): SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.dc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._tcp', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._udp', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_kerberos._tcp.dc', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464", "Calling samba-tool dns for SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kpasswd._tcp', 'SRV', 'servidor-pdc.contoso.local 464 0 100']", "Failed 'samba-tool dns' based update of SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464", "update (samba-tool): SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464", "Calling samba-tool dns for SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kpasswd._udp', 'SRV', 'servidor-pdc.contoso.local 464 0 100']", "Failed 'samba-tool dns' based update of SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.dc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_kerberos._tcp.Default-First-Site-Name._sites.dc', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.pdc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): A gc._msdcs.contoso.local 192.168.15.9", "Calling samba-tool dns for A gc._msdcs.contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', 'gc', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A gc._msdcs.contoso.local 192.168.15.9", "update (samba-tool): SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268", "Calling samba-tool dns for SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_gc._tcp', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']", "Failed 'samba-tool dns' based update of SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268", "update (samba-tool): SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "Calling samba-tool dns for SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.gc', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "update (samba-tool): SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268", "Calling samba-tool dns for SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_gc._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']", "Failed 'samba-tool dns' based update of SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.gc', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "update (samba-tool): A DomainDnsZones.contoso.local 192.168.15.9", "Calling samba-tool dns for A DomainDnsZones.contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'DomainDnsZones', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A DomainDnsZones.contoso.local 192.168.15.9", "update (samba-tool): SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.DomainDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): A ForestDnsZones.contoso.local 192.168.15.9", "Calling samba-tool dns for A ForestDnsZones.contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'ForestDnsZones', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A ForestDnsZones.contoso.local 192.168.15.9", "update (samba-tool): SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.ForestDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "Rebuilding cache at /var/lib/samba/private/dns_update_cache", "Adding A servidor-pdc.contoso.local 192.168.15.9 to dns_update_cache", "Adding CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local to dns_update_cache", "Adding NS contoso.local servidor-pdc.contoso.local to dns_update_cache", "Adding NS _msdcs.contoso.local servidor-pdc.contoso.local to dns_update_cache", "Adding A contoso.local 192.168.15.9 to dns_update_cache", "Adding SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464 to dns_update_cache", "Adding SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding A gc._msdcs.contoso.local 192.168.15.9 to dns_update_cache", "Adding SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache", "Adding SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache", "Adding SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache", "Adding A DomainDnsZones.contoso.local 192.168.15.9 to dns_update_cache", "Adding SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding A ForestDnsZones.contoso.local 192.168.15.9 to dns_update_cache", "Adding SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Failed update of 29 entries"]}
+2021-01-26 14:48:45,796 p=2335 u=root |  	to retry, use: --limit @/home/yuri/Documents/GIT/samba-ad-ansible/site.retry
+
+2021-01-26 14:48:45,796 p=2335 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 14:48:45,797 p=2335 u=root |  servidor-pdc               : ok=25   changed=22   unreachable=0    failed=1   
+2021-01-26 14:55:23,767 p=5915 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 14:55:24,340 p=5915 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 14:55:24,382 p=5915 u=root |  ERROR! Syntax Error while loading YAML.
+  found character that cannot start any token
+
+The error appears to have been in '/home/yuri/Documents/GIT/samba-ad-ansible/environments/1-master/group_vars/all/master_configuration.yml': line 56, column 52, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  mynetwork: {{ 'X/(ansible_default_ipv4.netmask)' | ipaddr('prefix') }}
+                                                   ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2021-01-26 15:04:52,605 p=8107 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 15:04:53,008 p=8107 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 15:04:53,059 p=8107 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 15:04:53,842 p=8107 u=root |  ok: [servidor-pdc]
+2021-01-26 15:04:53,852 p=8107 u=root |  TASK [samba4 : Provision | Remove smb.conf] ***********************************************************************************************************
+2021-01-26 15:04:54,087 p=8107 u=root |  changed: [servidor-pdc]
+2021-01-26 15:04:54,100 p=8107 u=root |  TASK [samba4 : Provision | Domain Provision] **********************************************************************************************************
+2021-01-26 15:05:47,063 p=8107 u=root |  changed: [servidor-pdc]
+2021-01-26 15:05:47,066 p=8107 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 15:05:47,066 p=8107 u=root |  servidor-pdc               : ok=3    changed=2    unreachable=0    failed=0   
+2021-01-26 15:06:14,478 p=8285 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 15:06:14,899 p=8285 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 15:06:14,942 p=8285 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 15:06:15,724 p=8285 u=root |  ok: [servidor-pdc]
+2021-01-26 15:06:15,733 p=8285 u=root |  TASK [samba4 : Configuration | Disable IPv6 1/2] ******************************************************************************************************
+2021-01-26 15:06:15,991 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:16,000 p=8285 u=root |  TASK [samba4 : Configuration | Disable IPv6 2/2] ******************************************************************************************************
+2021-01-26 15:06:16,258 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:16,271 p=8285 u=root |  TASK [samba4 : Configuration | Configure /etc/krb5.conf] **********************************************************************************************
+2021-01-26 15:06:16,821 p=8285 u=root |  ok: [servidor-pdc] => (item={'src': 'krb5.conf.j2', 'dest': '/etc/krb5.conf'})
+2021-01-26 15:06:16,830 p=8285 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 1/3] **********************************************************************************************
+2021-01-26 15:06:17,335 p=8285 u=root |  changed: [servidor-pdc] => (item={'src': 'chrony.conf.j2', 'dest': '/etc/chrony/chrony.conf'})
+2021-01-26 15:06:17,348 p=8285 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 2/3] **********************************************************************************************
+2021-01-26 15:06:17,488 p=8285 u=root |  ok: [servidor-pdc]
+2021-01-26 15:06:17,501 p=8285 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 3/3] **********************************************************************************************
+2021-01-26 15:06:18,089 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:18,102 p=8285 u=root |  TASK [samba4 : Configuration | Configure Bind9 1/3] ***************************************************************************************************
+2021-01-26 15:06:18,451 p=8285 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.j2', 'dest': '/etc/bind/named.conf'})
+2021-01-26 15:06:18,734 p=8285 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.local.j2', 'dest': '/etc/bind/named.conf.local'})
+2021-01-26 15:06:19,011 p=8285 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.options.j2', 'dest': '/etc/bind/named.conf.options'})
+2021-01-26 15:06:19,024 p=8285 u=root |  TASK [samba4 : Configuration | Configure Bind9 2/3] ***************************************************************************************************
+2021-01-26 15:06:19,178 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:19,190 p=8285 u=root |  TASK [samba4 : Configuration | Configure Bind9 3/3] ***************************************************************************************************
+2021-01-26 15:06:19,760 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:19,769 p=8285 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 1/2] **********************************************************************************************
+2021-01-26 15:06:19,905 p=8285 u=root |  ok: [servidor-pdc]
+2021-01-26 15:06:19,914 p=8285 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 2/2] **********************************************************************************************
+2021-01-26 15:06:20,166 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:20,175 p=8285 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 1/2] **************************************************************************************
+2021-01-26 15:06:20,337 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:20,346 p=8285 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 2/2] **************************************************************************************
+2021-01-26 15:06:20,511 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:20,528 p=8285 u=root |  TASK [samba4 : Configuration | Create folder /Servidor] ***********************************************************************************************
+2021-01-26 15:06:20,673 p=8285 u=root |  ok: [servidor-pdc]
+2021-01-26 15:06:20,689 p=8285 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Lixeira] ***************************************************************************************
+2021-01-26 15:06:20,836 p=8285 u=root |  ok: [servidor-pdc]
+2021-01-26 15:06:20,851 p=8285 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Usuarios] **************************************************************************************
+2021-01-26 15:06:21,013 p=8285 u=root |  ok: [servidor-pdc]
+2021-01-26 15:06:21,024 p=8285 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Backup] ****************************************************************************************
+2021-01-26 15:06:21,186 p=8285 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup)
+2021-01-26 15:06:21,315 p=8285 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/SAMBA4)
+2021-01-26 15:06:21,436 p=8285 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/LOGS)
+2021-01-26 15:06:21,453 p=8285 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Auditoria] *************************************************************************************
+2021-01-26 15:06:21,600 p=8285 u=root |  ok: [servidor-pdc]
+2021-01-26 15:06:21,615 p=8285 u=root |  TASK [samba4 : Configuration | Configure /etc/samba/smb.conf] *****************************************************************************************
+2021-01-26 15:06:22,065 p=8285 u=root |  changed: [servidor-pdc] => (item={'src': 'smb.conf.j2', 'dest': '/etc/samba/smb.conf'})
+2021-01-26 15:06:22,080 p=8285 u=root |  TASK [samba4 : Configuration | Configure samba systemd 1/2] *******************************************************************************************
+2021-01-26 15:06:22,411 p=8285 u=root |  ok: [servidor-pdc] => (item={'src': 'samba.service.j2', 'dest': '/etc/systemd/system/samba.service'})
+2021-01-26 15:06:22,425 p=8285 u=root |  TASK [samba4 : Configuration | Configure samba systemd 2/2] *******************************************************************************************
+2021-01-26 15:06:23,246 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:23,262 p=8285 u=root |  TASK [samba4 : Configuration | Enable bind9 systemd and start it] *************************************************************************************
+2021-01-26 15:06:26,343 p=8285 u=root |  changed: [servidor-pdc]
+2021-01-26 15:06:26,358 p=8285 u=root |  TASK [samba4 : Configuration | Update DNS Records] ****************************************************************************************************
+2021-01-26 15:07:12,192 p=8285 u=root |  fatal: [servidor-pdc]: FAILED! => {"changed": true, "cmd": ["samba_dnsupdate", "--all-names", "--verbose"], "delta": "0:00:45.492195", "end": "2021-01-26 15:07:12.199366", "msg": "non-zero return code", "rc": 31, "start": "2021-01-26 15:06:26.707171", "stderr": "ERROR: Record does not exist; record could not be deleted. zone[_msdcs.contoso.local] name[8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b]\nERROR: Record does not exist; record could not be deleted. zone[_msdcs.contoso.local] name[_ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[servidor-pdc]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[6b51e8d9-eeaf-40ce-9862-b72c42aeca97]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[@]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[@]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[@]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.dc]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._tcp]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._udp]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_kerberos._tcp.dc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kpasswd._tcp]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kpasswd._udp]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.dc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._tcp.Default-First-Site-Name._sites]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_kerberos._tcp.Default-First-Site-Name._sites.dc]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.pdc]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[gc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_gc._tcp]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.gc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_gc._tcp.Default-First-Site-Name._sites]\nERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.gc]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[DomainDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.DomainDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[ForestDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.ForestDnsZones]\nERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones]", "stderr_lines": ["ERROR: Record does not exist; record could not be deleted. zone[_msdcs.contoso.local] name[8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b]", "ERROR: Record does not exist; record could not be deleted. zone[_msdcs.contoso.local] name[_ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[servidor-pdc]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[6b51e8d9-eeaf-40ce-9862-b72c42aeca97]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[@]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[@]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[@]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.dc]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._tcp]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._udp]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_kerberos._tcp.dc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kpasswd._tcp]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kpasswd._udp]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.dc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_kerberos._tcp.Default-First-Site-Name._sites]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_kerberos._tcp.Default-First-Site-Name._sites.dc]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.pdc]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[gc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_gc._tcp]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.gc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_gc._tcp.Default-First-Site-Name._sites]", "ERROR: Record already exist; record could not be added. zone[_msdcs.contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.gc]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[DomainDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.DomainDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[ForestDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.ForestDnsZones]", "ERROR: Record already exist; record could not be added. zone[contoso.local] name[_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones]"], "stdout": "IPs: ['192.168.15.9']\nforce update: A servidor-pdc.contoso.local 192.168.15.9\nneed cache add: CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local\nforce update: CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local\nforce update: NS contoso.local servidor-pdc.contoso.local\nforce update: NS _msdcs.contoso.local servidor-pdc.contoso.local\nforce update: A contoso.local 192.168.15.9\nforce update: SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nneed cache add: SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464\nforce update: SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nforce update: SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389\nforce update: A gc._msdcs.contoso.local 192.168.15.9\nforce update: SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268\nforce update: SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nforce update: SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nforce update: A DomainDnsZones.contoso.local 192.168.15.9\nforce update: SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nforce update: A ForestDnsZones.contoso.local 192.168.15.9\nforce update: SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nforce update: SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nneed cache remove: CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local\nneed delete: CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local\nneed cache remove: SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nneed delete: SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\n29 DNS updates and 2 DNS deletes needed\nFailed to get Kerberos credentials, falling back to samba-tool: kinit for SERVIDOR-PDC$@CONTOSO.LOCAL failed (Cannot contact any KDC for requested realm)\n\ndelete (samba-tool): CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local\nCalling samba-tool dns for CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local (delete)\nCalling samba-tool dns delete -k no -P ['192.168.15.9', '_msdcs.contoso.local', '8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b', 'CNAME', 'servidor-pdc.contoso.local']\nFailed 'samba-tool dns' based update of CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local\ndelete (samba-tool): SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 (delete)\nCalling samba-tool dns delete -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): A servidor-pdc.contoso.local 192.168.15.9\nCalling samba-tool dns for A servidor-pdc.contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'servidor-pdc', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A servidor-pdc.contoso.local 192.168.15.9\nupdate (samba-tool): CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local\nCalling samba-tool dns for CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '6b51e8d9-eeaf-40ce-9862-b72c42aeca97', 'CNAME', 'servidor-pdc.contoso.local']\nFailed 'samba-tool dns' based update of CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local\nupdate (samba-tool): NS contoso.local servidor-pdc.contoso.local\nCalling samba-tool dns for NS contoso.local servidor-pdc.contoso.local (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '@', 'NS', 'servidor-pdc.contoso.local']\nFailed 'samba-tool dns' based update of NS contoso.local servidor-pdc.contoso.local\nupdate (samba-tool): NS _msdcs.contoso.local servidor-pdc.contoso.local\nCalling samba-tool dns for NS _msdcs.contoso.local servidor-pdc.contoso.local (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '@', 'NS', 'servidor-pdc.contoso.local']\nFailed 'samba-tool dns' based update of NS _msdcs.contoso.local servidor-pdc.contoso.local\nupdate (samba-tool): A contoso.local 192.168.15.9\nCalling samba-tool dns for A contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '@', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A contoso.local 192.168.15.9\nupdate (samba-tool): SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.dc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._tcp', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._udp', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_kerberos._tcp.dc', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464\nCalling samba-tool dns for SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kpasswd._tcp', 'SRV', 'servidor-pdc.contoso.local 464 0 100']\nFailed 'samba-tool dns' based update of SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464\nupdate (samba-tool): SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464\nCalling samba-tool dns for SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kpasswd._udp', 'SRV', 'servidor-pdc.contoso.local 464 0 100']\nFailed 'samba-tool dns' based update of SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.dc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nCalling samba-tool dns for SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_kerberos._tcp.Default-First-Site-Name._sites.dc', 'SRV', 'servidor-pdc.contoso.local 88 0 100']\nFailed 'samba-tool dns' based update of SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88\nupdate (samba-tool): SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.pdc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): A gc._msdcs.contoso.local 192.168.15.9\nCalling samba-tool dns for A gc._msdcs.contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', 'gc', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A gc._msdcs.contoso.local 192.168.15.9\nupdate (samba-tool): SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268\nCalling samba-tool dns for SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_gc._tcp', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']\nFailed 'samba-tool dns' based update of SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268\nupdate (samba-tool): SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nCalling samba-tool dns for SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.gc', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nupdate (samba-tool): SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268\nCalling samba-tool dns for SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_gc._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']\nFailed 'samba-tool dns' based update of SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.gc', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268\nupdate (samba-tool): A DomainDnsZones.contoso.local 192.168.15.9\nCalling samba-tool dns for A DomainDnsZones.contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'DomainDnsZones', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A DomainDnsZones.contoso.local 192.168.15.9\nupdate (samba-tool): SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.DomainDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): A ForestDnsZones.contoso.local 192.168.15.9\nCalling samba-tool dns for A ForestDnsZones.contoso.local 192.168.15.9 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'ForestDnsZones', 'A', '192.168.15.9']\nFailed 'samba-tool dns' based update of A ForestDnsZones.contoso.local 192.168.15.9\nupdate (samba-tool): SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.ForestDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nupdate (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nCalling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)\nCalling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']\nFailed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389\nRebuilding cache at /var/lib/samba/private/dns_update_cache\nAdding A servidor-pdc.contoso.local 192.168.15.9 to dns_update_cache\nAdding CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local to dns_update_cache\nAdding NS contoso.local servidor-pdc.contoso.local to dns_update_cache\nAdding NS _msdcs.contoso.local servidor-pdc.contoso.local to dns_update_cache\nAdding A contoso.local 192.168.15.9 to dns_update_cache\nAdding SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464 to dns_update_cache\nAdding SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache\nAdding SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding A gc._msdcs.contoso.local 192.168.15.9 to dns_update_cache\nAdding SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache\nAdding SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache\nAdding SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache\nAdding A DomainDnsZones.contoso.local 192.168.15.9 to dns_update_cache\nAdding SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding A ForestDnsZones.contoso.local 192.168.15.9 to dns_update_cache\nAdding SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nAdding SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache\nFailed update of 31 entries", "stdout_lines": ["IPs: ['192.168.15.9']", "force update: A servidor-pdc.contoso.local 192.168.15.9", "need cache add: CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local", "force update: CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local", "force update: NS contoso.local servidor-pdc.contoso.local", "force update: NS _msdcs.contoso.local servidor-pdc.contoso.local", "force update: A contoso.local 192.168.15.9", "force update: SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "need cache add: SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464", "force update: SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "force update: SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389", "force update: A gc._msdcs.contoso.local 192.168.15.9", "force update: SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268", "force update: SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "force update: SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "force update: A DomainDnsZones.contoso.local 192.168.15.9", "force update: SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "force update: A ForestDnsZones.contoso.local 192.168.15.9", "force update: SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "force update: SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "need cache remove: CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local", "need delete: CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local", "need cache remove: SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "need delete: SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "29 DNS updates and 2 DNS deletes needed", "Failed to get Kerberos credentials, falling back to samba-tool: kinit for SERVIDOR-PDC$@CONTOSO.LOCAL failed (Cannot contact any KDC for requested realm)", "", "delete (samba-tool): CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local", "Calling samba-tool dns for CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local (delete)", "Calling samba-tool dns delete -k no -P ['192.168.15.9', '_msdcs.contoso.local', '8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b', 'CNAME', 'servidor-pdc.contoso.local']", "Failed 'samba-tool dns' based update of CNAME 8fc284cc-5ab0-41cd-b9ec-fe0d92a3203b._msdcs.contoso.local servidor-pdc.contoso.local", "delete (samba-tool): SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 (delete)", "Calling samba-tool dns delete -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.016d271a-49b5-4918-8191-56b14b22aadc.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): A servidor-pdc.contoso.local 192.168.15.9", "Calling samba-tool dns for A servidor-pdc.contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'servidor-pdc', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A servidor-pdc.contoso.local 192.168.15.9", "update (samba-tool): CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local", "Calling samba-tool dns for CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '6b51e8d9-eeaf-40ce-9862-b72c42aeca97', 'CNAME', 'servidor-pdc.contoso.local']", "Failed 'samba-tool dns' based update of CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local", "update (samba-tool): NS contoso.local servidor-pdc.contoso.local", "Calling samba-tool dns for NS contoso.local servidor-pdc.contoso.local (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '@', 'NS', 'servidor-pdc.contoso.local']", "Failed 'samba-tool dns' based update of NS contoso.local servidor-pdc.contoso.local", "update (samba-tool): NS _msdcs.contoso.local servidor-pdc.contoso.local", "Calling samba-tool dns for NS _msdcs.contoso.local servidor-pdc.contoso.local (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '@', 'NS', 'servidor-pdc.contoso.local']", "Failed 'samba-tool dns' based update of NS _msdcs.contoso.local servidor-pdc.contoso.local", "update (samba-tool): A contoso.local 192.168.15.9", "Calling samba-tool dns for A contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '@', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A contoso.local 192.168.15.9", "update (samba-tool): SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.dc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._tcp', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._udp', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_kerberos._tcp.dc', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464", "Calling samba-tool dns for SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kpasswd._tcp', 'SRV', 'servidor-pdc.contoso.local 464 0 100']", "Failed 'samba-tool dns' based update of SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464", "update (samba-tool): SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464", "Calling samba-tool dns for SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kpasswd._udp', 'SRV', 'servidor-pdc.contoso.local 464 0 100']", "Failed 'samba-tool dns' based update of SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.dc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_kerberos._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "Calling samba-tool dns for SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_kerberos._tcp.Default-First-Site-Name._sites.dc', 'SRV', 'servidor-pdc.contoso.local 88 0 100']", "Failed 'samba-tool dns' based update of SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88", "update (samba-tool): SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.pdc', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): A gc._msdcs.contoso.local 192.168.15.9", "Calling samba-tool dns for A gc._msdcs.contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', 'gc', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A gc._msdcs.contoso.local 192.168.15.9", "update (samba-tool): SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268", "Calling samba-tool dns for SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_gc._tcp', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']", "Failed 'samba-tool dns' based update of SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268", "update (samba-tool): SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "Calling samba-tool dns for SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.gc', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "update (samba-tool): SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268", "Calling samba-tool dns for SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_gc._tcp.Default-First-Site-Name._sites', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']", "Failed 'samba-tool dns' based update of SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', '_msdcs.contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.gc', 'SRV', 'servidor-pdc.contoso.local 3268 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268", "update (samba-tool): A DomainDnsZones.contoso.local 192.168.15.9", "Calling samba-tool dns for A DomainDnsZones.contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'DomainDnsZones', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A DomainDnsZones.contoso.local 192.168.15.9", "update (samba-tool): SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.DomainDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): A ForestDnsZones.contoso.local 192.168.15.9", "Calling samba-tool dns for A ForestDnsZones.contoso.local 192.168.15.9 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', 'ForestDnsZones', 'A', '192.168.15.9']", "Failed 'samba-tool dns' based update of A ForestDnsZones.contoso.local 192.168.15.9", "update (samba-tool): SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.ForestDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "update (samba-tool): SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "Calling samba-tool dns for SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 (add)", "Calling samba-tool dns add -k no -P ['192.168.15.9', 'contoso.local', '_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones', 'SRV', 'servidor-pdc.contoso.local 389 0 100']", "Failed 'samba-tool dns' based update of SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389", "Rebuilding cache at /var/lib/samba/private/dns_update_cache", "Adding A servidor-pdc.contoso.local 192.168.15.9 to dns_update_cache", "Adding CNAME 6b51e8d9-eeaf-40ce-9862-b72c42aeca97._msdcs.contoso.local servidor-pdc.contoso.local to dns_update_cache", "Adding NS contoso.local servidor-pdc.contoso.local to dns_update_cache", "Adding NS _msdcs.contoso.local servidor-pdc.contoso.local to dns_update_cache", "Adding A contoso.local 192.168.15.9 to dns_update_cache", "Adding SRV _ldap._tcp.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.e6cddca7-477e-49e8-b767-d36e2dd73d2e.domains._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _kerberos._tcp.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _kerberos._udp.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _kerberos._tcp.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _kpasswd._tcp.contoso.local servidor-pdc.contoso.local 464 to dns_update_cache", "Adding SRV _kpasswd._udp.contoso.local servidor-pdc.contoso.local 464 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _kerberos._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.contoso.local servidor-pdc.contoso.local 88 to dns_update_cache", "Adding SRV _ldap._tcp.pdc._msdcs.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding A gc._msdcs.contoso.local 192.168.15.9 to dns_update_cache", "Adding SRV _gc._tcp.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache", "Adding SRV _ldap._tcp.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache", "Adding SRV _gc._tcp.Default-First-Site-Name._sites.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.contoso.local servidor-pdc.contoso.local 3268 to dns_update_cache", "Adding A DomainDnsZones.contoso.local 192.168.15.9 to dns_update_cache", "Adding SRV _ldap._tcp.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding A ForestDnsZones.contoso.local 192.168.15.9 to dns_update_cache", "Adding SRV _ldap._tcp.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Adding SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.contoso.local servidor-pdc.contoso.local 389 to dns_update_cache", "Failed update of 31 entries"]}
+2021-01-26 15:07:12,195 p=8285 u=root |  	to retry, use: --limit @/home/yuri/Documents/GIT/samba-ad-ansible/site.retry
+
+2021-01-26 15:07:12,196 p=8285 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 15:07:12,196 p=8285 u=root |  servidor-pdc               : ok=23   changed=12   unreachable=0    failed=1   
+2021-01-26 15:13:18,496 p=9238 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 15:13:18,884 p=9238 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 15:13:18,926 p=9238 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 15:13:19,748 p=9238 u=root |  ok: [servidor-pdc]
+2021-01-26 15:13:19,758 p=9238 u=root |  TASK [samba4 : Configuration | Disable IPv6 1/2] ******************************************************************************************************
+2021-01-26 15:13:19,982 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:19,995 p=9238 u=root |  TASK [samba4 : Configuration | Disable IPv6 2/2] ******************************************************************************************************
+2021-01-26 15:13:20,257 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:20,270 p=9238 u=root |  TASK [samba4 : Configuration | Configure /etc/krb5.conf] **********************************************************************************************
+2021-01-26 15:13:20,869 p=9238 u=root |  ok: [servidor-pdc] => (item={'src': 'krb5.conf.j2', 'dest': '/etc/krb5.conf'})
+2021-01-26 15:13:20,879 p=9238 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 1/3] **********************************************************************************************
+2021-01-26 15:13:21,201 p=9238 u=root |  ok: [servidor-pdc] => (item={'src': 'chrony.conf.j2', 'dest': '/etc/chrony/chrony.conf'})
+2021-01-26 15:13:21,212 p=9238 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 2/3] **********************************************************************************************
+2021-01-26 15:13:21,356 p=9238 u=root |  ok: [servidor-pdc]
+2021-01-26 15:13:21,365 p=9238 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 3/3] **********************************************************************************************
+2021-01-26 15:13:21,944 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:21,953 p=9238 u=root |  TASK [samba4 : Configuration | Configure Bind9 1/3] ***************************************************************************************************
+2021-01-26 15:13:22,339 p=9238 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.j2', 'dest': '/etc/bind/named.conf'})
+2021-01-26 15:13:22,620 p=9238 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.local.j2', 'dest': '/etc/bind/named.conf.local'})
+2021-01-26 15:13:22,966 p=9238 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.options.j2', 'dest': '/etc/bind/named.conf.options'})
+2021-01-26 15:13:23,424 p=9238 u=root |  changed: [servidor-pdc] => (item={'src': 'resolv.conf.j2', 'dest': '/etc/resolv.conf'})
+2021-01-26 15:13:23,437 p=9238 u=root |  TASK [samba4 : Configuration | Configure Bind9 2/3] ***************************************************************************************************
+2021-01-26 15:13:23,582 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:23,592 p=9238 u=root |  TASK [samba4 : Configuration | Configure Bind9 3/3] ***************************************************************************************************
+2021-01-26 15:13:24,155 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:24,165 p=9238 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 1/2] **********************************************************************************************
+2021-01-26 15:13:24,332 p=9238 u=root |  ok: [servidor-pdc]
+2021-01-26 15:13:24,346 p=9238 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 2/2] **********************************************************************************************
+2021-01-26 15:13:24,572 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:24,584 p=9238 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 1/2] **************************************************************************************
+2021-01-26 15:13:24,725 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:24,738 p=9238 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 2/2] **************************************************************************************
+2021-01-26 15:13:24,876 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:24,887 p=9238 u=root |  TASK [samba4 : Configuration | Create folder /Servidor] ***********************************************************************************************
+2021-01-26 15:13:25,047 p=9238 u=root |  ok: [servidor-pdc]
+2021-01-26 15:13:25,059 p=9238 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Lixeira] ***************************************************************************************
+2021-01-26 15:13:25,230 p=9238 u=root |  ok: [servidor-pdc]
+2021-01-26 15:13:25,241 p=9238 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Usuarios] **************************************************************************************
+2021-01-26 15:13:25,415 p=9238 u=root |  ok: [servidor-pdc]
+2021-01-26 15:13:25,430 p=9238 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Backup] ****************************************************************************************
+2021-01-26 15:13:25,583 p=9238 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup)
+2021-01-26 15:13:25,709 p=9238 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/SAMBA4)
+2021-01-26 15:13:25,821 p=9238 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/LOGS)
+2021-01-26 15:13:25,836 p=9238 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Auditoria] *************************************************************************************
+2021-01-26 15:13:26,011 p=9238 u=root |  ok: [servidor-pdc]
+2021-01-26 15:13:26,020 p=9238 u=root |  TASK [samba4 : Configuration | Configure /etc/samba/smb.conf] *****************************************************************************************
+2021-01-26 15:13:26,353 p=9238 u=root |  ok: [servidor-pdc] => (item={'src': 'smb.conf.j2', 'dest': '/etc/samba/smb.conf'})
+2021-01-26 15:13:26,364 p=9238 u=root |  TASK [samba4 : Configuration | Configure samba systemd 1/2] *******************************************************************************************
+2021-01-26 15:13:26,748 p=9238 u=root |  ok: [servidor-pdc] => (item={'src': 'samba.service.j2', 'dest': '/etc/systemd/system/samba.service'})
+2021-01-26 15:13:26,762 p=9238 u=root |  TASK [samba4 : Configuration | Configure samba systemd 2/2] *******************************************************************************************
+2021-01-26 15:13:27,615 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:27,632 p=9238 u=root |  TASK [samba4 : Configuration | Enable bind9 systemd and start it] *************************************************************************************
+2021-01-26 15:13:30,605 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:30,621 p=9238 u=root |  TASK [samba4 : Configuration | Update DNS Records] ****************************************************************************************************
+2021-01-26 15:13:39,188 p=9238 u=root |  changed: [servidor-pdc]
+2021-01-26 15:13:39,197 p=9238 u=root |  TASK [samba4 : Configuration | RPC Rights Grant 1/2] **************************************************************************************************
+2021-01-26 15:13:39,468 p=9238 u=root |  fatal: [servidor-pdc]: FAILED! => {"censored": "the output has been hidden due to the fact that 'no_log: true' was specified for this result", "changed": false}
+2021-01-26 15:13:39,470 p=9238 u=root |  	to retry, use: --limit @/home/yuri/Documents/GIT/samba-ad-ansible/site.retry
+
+2021-01-26 15:13:39,471 p=9238 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 15:13:39,471 p=9238 u=root |  servidor-pdc               : ok=24   changed=12   unreachable=0    failed=1   
+2021-01-26 15:14:17,873 p=9438 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 15:14:18,306 p=9438 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 15:14:18,351 p=9438 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 15:14:19,141 p=9438 u=root |  ok: [servidor-pdc]
+2021-01-26 15:14:19,151 p=9438 u=root |  TASK [samba4 : Configuration | Disable IPv6 1/2] ******************************************************************************************************
+2021-01-26 15:14:19,380 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:19,393 p=9438 u=root |  TASK [samba4 : Configuration | Disable IPv6 2/2] ******************************************************************************************************
+2021-01-26 15:14:19,625 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:19,634 p=9438 u=root |  TASK [samba4 : Configuration | Configure /etc/krb5.conf] **********************************************************************************************
+2021-01-26 15:14:20,237 p=9438 u=root |  ok: [servidor-pdc] => (item={'src': 'krb5.conf.j2', 'dest': '/etc/krb5.conf'})
+2021-01-26 15:14:20,247 p=9438 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 1/3] **********************************************************************************************
+2021-01-26 15:14:20,582 p=9438 u=root |  ok: [servidor-pdc] => (item={'src': 'chrony.conf.j2', 'dest': '/etc/chrony/chrony.conf'})
+2021-01-26 15:14:20,596 p=9438 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 2/3] **********************************************************************************************
+2021-01-26 15:14:20,732 p=9438 u=root |  ok: [servidor-pdc]
+2021-01-26 15:14:20,745 p=9438 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 3/3] **********************************************************************************************
+2021-01-26 15:14:21,330 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:21,340 p=9438 u=root |  TASK [samba4 : Configuration | Configure Bind9 1/3] ***************************************************************************************************
+2021-01-26 15:14:21,744 p=9438 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.j2', 'dest': '/etc/bind/named.conf'})
+2021-01-26 15:14:22,028 p=9438 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.local.j2', 'dest': '/etc/bind/named.conf.local'})
+2021-01-26 15:14:22,311 p=9438 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.options.j2', 'dest': '/etc/bind/named.conf.options'})
+2021-01-26 15:14:22,654 p=9438 u=root |  ok: [servidor-pdc] => (item={'src': 'resolv.conf.j2', 'dest': '/etc/resolv.conf'})
+2021-01-26 15:14:22,663 p=9438 u=root |  TASK [samba4 : Configuration | Configure Bind9 2/3] ***************************************************************************************************
+2021-01-26 15:14:22,822 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:22,832 p=9438 u=root |  TASK [samba4 : Configuration | Configure Bind9 3/3] ***************************************************************************************************
+2021-01-26 15:14:23,435 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:23,445 p=9438 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 1/2] **********************************************************************************************
+2021-01-26 15:14:23,610 p=9438 u=root |  ok: [servidor-pdc]
+2021-01-26 15:14:23,618 p=9438 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 2/2] **********************************************************************************************
+2021-01-26 15:14:23,867 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:23,876 p=9438 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 1/2] **************************************************************************************
+2021-01-26 15:14:24,035 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:24,050 p=9438 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 2/2] **************************************************************************************
+2021-01-26 15:14:24,225 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:24,237 p=9438 u=root |  TASK [samba4 : Configuration | Create folder /Servidor] ***********************************************************************************************
+2021-01-26 15:14:24,411 p=9438 u=root |  ok: [servidor-pdc]
+2021-01-26 15:14:24,422 p=9438 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Lixeira] ***************************************************************************************
+2021-01-26 15:14:24,595 p=9438 u=root |  ok: [servidor-pdc]
+2021-01-26 15:14:24,611 p=9438 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Usuarios] **************************************************************************************
+2021-01-26 15:14:24,782 p=9438 u=root |  ok: [servidor-pdc]
+2021-01-26 15:14:24,793 p=9438 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Backup] ****************************************************************************************
+2021-01-26 15:14:24,945 p=9438 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup)
+2021-01-26 15:14:25,063 p=9438 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/SAMBA4)
+2021-01-26 15:14:25,188 p=9438 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/LOGS)
+2021-01-26 15:14:25,205 p=9438 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Auditoria] *************************************************************************************
+2021-01-26 15:14:25,376 p=9438 u=root |  ok: [servidor-pdc]
+2021-01-26 15:14:25,386 p=9438 u=root |  TASK [samba4 : Configuration | Configure /etc/samba/smb.conf] *****************************************************************************************
+2021-01-26 15:14:25,772 p=9438 u=root |  ok: [servidor-pdc] => (item={'src': 'smb.conf.j2', 'dest': '/etc/samba/smb.conf'})
+2021-01-26 15:14:25,785 p=9438 u=root |  TASK [samba4 : Configuration | Configure samba systemd 1/2] *******************************************************************************************
+2021-01-26 15:14:26,136 p=9438 u=root |  ok: [servidor-pdc] => (item={'src': 'samba.service.j2', 'dest': '/etc/systemd/system/samba.service'})
+2021-01-26 15:14:26,146 p=9438 u=root |  TASK [samba4 : Configuration | Configure samba systemd 2/2] *******************************************************************************************
+2021-01-26 15:14:26,954 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:26,969 p=9438 u=root |  TASK [samba4 : Configuration | Enable bind9 systemd and start it] *************************************************************************************
+2021-01-26 15:14:29,999 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:30,013 p=9438 u=root |  TASK [samba4 : Configuration | Update DNS Records] ****************************************************************************************************
+2021-01-26 15:14:38,270 p=9438 u=root |  changed: [servidor-pdc]
+2021-01-26 15:14:38,279 p=9438 u=root |  TASK [samba4 : Configuration | RPC Rights Grant 1/2] **************************************************************************************************
+2021-01-26 15:14:38,550 p=9438 u=root |  fatal: [servidor-pdc]: FAILED! => {"censored": "the output has been hidden due to the fact that 'no_log: true' was specified for this result", "changed": false}
+2021-01-26 15:14:38,553 p=9438 u=root |  	to retry, use: --limit @/home/yuri/Documents/GIT/samba-ad-ansible/site.retry
+
+2021-01-26 15:14:38,554 p=9438 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 15:14:38,554 p=9438 u=root |  servidor-pdc               : ok=24   changed=11   unreachable=0    failed=1   
+2021-01-26 15:19:21,126 p=10208 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 15:19:21,574 p=10208 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 15:19:21,616 p=10208 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 15:19:22,407 p=10208 u=root |  ok: [servidor-pdc]
+2021-01-26 15:19:22,422 p=10208 u=root |  TASK [samba4 : Configuration | Disable IPv6 1/2] ******************************************************************************************************
+2021-01-26 15:19:22,681 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:22,691 p=10208 u=root |  TASK [samba4 : Configuration | Disable IPv6 2/2] ******************************************************************************************************
+2021-01-26 15:19:22,912 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:22,925 p=10208 u=root |  TASK [samba4 : Configuration | Configure /etc/krb5.conf] **********************************************************************************************
+2021-01-26 15:19:23,525 p=10208 u=root |  ok: [servidor-pdc] => (item={'src': 'krb5.conf.j2', 'dest': '/etc/krb5.conf'})
+2021-01-26 15:19:23,537 p=10208 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 1/3] **********************************************************************************************
+2021-01-26 15:19:23,858 p=10208 u=root |  ok: [servidor-pdc] => (item={'src': 'chrony.conf.j2', 'dest': '/etc/chrony/chrony.conf'})
+2021-01-26 15:19:23,868 p=10208 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 2/3] **********************************************************************************************
+2021-01-26 15:19:24,079 p=10208 u=root |  ok: [servidor-pdc]
+2021-01-26 15:19:24,107 p=10208 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 3/3] **********************************************************************************************
+2021-01-26 15:19:24,972 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:25,005 p=10208 u=root |  TASK [samba4 : Configuration | Configure Bind9 1/3] ***************************************************************************************************
+2021-01-26 15:19:25,477 p=10208 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.j2', 'dest': '/etc/bind/named.conf'})
+2021-01-26 15:19:25,847 p=10208 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.local.j2', 'dest': '/etc/bind/named.conf.local'})
+2021-01-26 15:19:26,395 p=10208 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.options.j2', 'dest': '/etc/bind/named.conf.options'})
+2021-01-26 15:19:27,167 p=10208 u=root |  ok: [servidor-pdc] => (item={'src': 'resolv.conf.j2', 'dest': '/etc/resolv.conf'})
+2021-01-26 15:19:27,186 p=10208 u=root |  TASK [samba4 : Configuration | Configure Bind9 2/3] ***************************************************************************************************
+2021-01-26 15:19:27,414 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:27,422 p=10208 u=root |  TASK [samba4 : Configuration | Configure Bind9 3/3] ***************************************************************************************************
+2021-01-26 15:19:28,235 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:28,248 p=10208 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 1/2] **********************************************************************************************
+2021-01-26 15:19:28,473 p=10208 u=root |  ok: [servidor-pdc]
+2021-01-26 15:19:28,488 p=10208 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 2/2] **********************************************************************************************
+2021-01-26 15:19:28,940 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:28,994 p=10208 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 1/2] **************************************************************************************
+2021-01-26 15:19:29,417 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:29,441 p=10208 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 2/2] **************************************************************************************
+2021-01-26 15:19:29,646 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:29,660 p=10208 u=root |  TASK [samba4 : Configuration | Create folder /Servidor] ***********************************************************************************************
+2021-01-26 15:19:29,822 p=10208 u=root |  ok: [servidor-pdc]
+2021-01-26 15:19:29,837 p=10208 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Lixeira] ***************************************************************************************
+2021-01-26 15:19:30,013 p=10208 u=root |  ok: [servidor-pdc]
+2021-01-26 15:19:30,026 p=10208 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Usuarios] **************************************************************************************
+2021-01-26 15:19:30,227 p=10208 u=root |  ok: [servidor-pdc]
+2021-01-26 15:19:30,251 p=10208 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Backup] ****************************************************************************************
+2021-01-26 15:19:30,543 p=10208 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup)
+2021-01-26 15:19:30,713 p=10208 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/SAMBA4)
+2021-01-26 15:19:30,825 p=10208 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/LOGS)
+2021-01-26 15:19:30,836 p=10208 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Auditoria] *************************************************************************************
+2021-01-26 15:19:31,238 p=10208 u=root |  ok: [servidor-pdc]
+2021-01-26 15:19:31,258 p=10208 u=root |  TASK [samba4 : Configuration | Configure /etc/samba/smb.conf] *****************************************************************************************
+2021-01-26 15:19:31,694 p=10208 u=root |  ok: [servidor-pdc] => (item={'src': 'smb.conf.j2', 'dest': '/etc/samba/smb.conf'})
+2021-01-26 15:19:31,709 p=10208 u=root |  TASK [samba4 : Configuration | Configure samba systemd 1/2] *******************************************************************************************
+2021-01-26 15:19:32,072 p=10208 u=root |  ok: [servidor-pdc] => (item={'src': 'samba.service.j2', 'dest': '/etc/systemd/system/samba.service'})
+2021-01-26 15:19:32,086 p=10208 u=root |  TASK [samba4 : Configuration | Configure samba systemd 2/2] *******************************************************************************************
+2021-01-26 15:19:33,367 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:33,407 p=10208 u=root |  TASK [samba4 : Configuration | Enable bind9 systemd and start it] *************************************************************************************
+2021-01-26 15:19:37,630 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:37,649 p=10208 u=root |  TASK [samba4 : Configuration | Update DNS Records] ****************************************************************************************************
+2021-01-26 15:19:47,834 p=10208 u=root |  changed: [servidor-pdc]
+2021-01-26 15:19:47,847 p=10208 u=root |  TASK [samba4 : Configuration | RPC Rights Grant 1/2] **************************************************************************************************
+2021-01-26 15:19:48,153 p=10208 u=root |  fatal: [servidor-pdc]: FAILED! => {"changed": false, "msg": "The pexpect python module is required"}
+2021-01-26 15:19:48,156 p=10208 u=root |  	to retry, use: --limit @/home/yuri/Documents/GIT/samba-ad-ansible/site.retry
+
+2021-01-26 15:19:48,157 p=10208 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 15:19:48,157 p=10208 u=root |  servidor-pdc               : ok=24   changed=11   unreachable=0    failed=1   
+2021-01-26 16:10:19,486 p=14736 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 16:10:19,613 p=14736 u=root |   [WARNING]: While constructing a mapping from /home/yuri/Documents/GIT/samba-ad-ansible/roles/samba4/tasks/common.yml, line 3, column 3, found a
+duplicate dict key (apt). Using last defined value only.
+
+2021-01-26 16:10:19,855 p=14736 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 16:10:19,878 p=14736 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 16:10:20,892 p=14736 u=root |  ok: [servidor-pdc]
+2021-01-26 16:10:20,905 p=14736 u=root |  TASK [samba4 : Init | Installing Required Packages (Please Wait....)] *********************************************************************************
+2021-01-26 16:10:21,207 p=14736 u=root |  fatal: [servidor-pdc]: FAILED! => {"changed": false, "msg": "value of state must be one of: absent, build-dep, installed, latest, present, removed, present, got: present - bind9utils - binutils - bison - build-essential - ccache - chrpath - curl - debhelper - dnsutils - docbook-xml - docbook-xsl - flex - gcc - gdb - git - glusterfs-common - gzip - heimdal-multidev - hostname - htop - krb5-config - krb5-kdc - krb5-user - lcov - libacl1-dev - libarchive-dev - libattr1-dev - libavahi-common-dev - libblkid-dev - libbsd-dev - libcap-dev - libcephfs-dev - libcups2-dev - libdbus-1-dev - libglib2.0-dev - libgnutls28-dev - libgpgme11-dev - libicu-dev - libjansson-dev - libjs-jquery - libjson-perl - libkrb5-dev - libldap2-dev - liblmdb-dev - libncurses5-dev - libpam0g-dev - libparse-yapp-perl - libpcap-dev - libpopt-dev - libreadline-dev - libsystemd-dev - libtasn1-bin - libtasn1-dev - libunwind-dev - lmdb-utils - locales - lsb-release - make - mawk - mingw-w64 - patch - perl - perl-modules - pkg-config - procps - psmisc - python3 - python3-cryptography - python3-dbg - python3-dev - python3-dnspython - python3-gpg - python3-iso8601 - python3-markdown - python3-matplotlib - python3-pexpect - python3-pyasn1 - python3-setproctitle - python-pexpect - rng-tools - rsync - sed - sudo - tar - tree - uuid-dev - wget - xfslibs-dev - xsltproc - zlib1g-dev - chrony - bind9"}
+2021-01-26 16:10:21,209 p=14736 u=root |  	to retry, use: --limit @/home/yuri/Documents/GIT/samba-ad-ansible/site.retry
+
+2021-01-26 16:10:21,210 p=14736 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 16:10:21,210 p=14736 u=root |  servidor-pdc               : ok=1    changed=0    unreachable=0    failed=1   
+2021-01-26 16:11:11,091 p=14877 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 16:11:11,438 p=14877 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 16:11:11,458 p=14877 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 16:11:12,288 p=14877 u=root |  ok: [servidor-pdc]
+2021-01-26 16:11:12,298 p=14877 u=root |  TASK [samba4 : Init | Installing Required Packages (Please Wait....)] *********************************************************************************
+2021-01-26 16:11:13,082 p=14877 u=root |  ok: [servidor-pdc]
+2021-01-26 16:11:13,092 p=14877 u=root |  TASK [samba4 : Copy Veeam Repository] *****************************************************************************************************************
+2021-01-26 16:11:13,659 p=14877 u=root |  changed: [servidor-pdc]
+2021-01-26 16:11:13,676 p=14877 u=root |  TASK [samba4 : Install Veeam Backup] ******************************************************************************************************************
+2021-01-26 16:11:19,305 p=14877 u=root |   [ERROR]: User interrupted execution
+
+2021-01-26 16:11:36,016 p=14933 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 16:11:36,352 p=14933 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 16:11:36,372 p=14933 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 16:11:37,190 p=14933 u=root |  ok: [servidor-pdc]
+2021-01-26 16:11:37,199 p=14933 u=root |  TASK [samba4 : Init | Installing Required Packages (Please Wait....)] *********************************************************************************
+2021-01-26 16:11:37,989 p=14933 u=root |  ok: [servidor-pdc]
+2021-01-26 16:11:38,000 p=14933 u=root |  TASK [samba4 : Copy Veeam Repository] *****************************************************************************************************************
+2021-01-26 16:11:38,662 p=14933 u=root |  changed: [servidor-pdc]
+2021-01-26 16:11:38,675 p=14933 u=root |  TASK [samba4 : Install Veeam Backup] ******************************************************************************************************************
+2021-01-26 16:11:45,284 p=14933 u=root |  changed: [servidor-pdc]
+2021-01-26 16:11:45,286 p=14933 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 16:11:45,287 p=14933 u=root |  servidor-pdc               : ok=4    changed=2    unreachable=0    failed=0   
+2021-01-26 16:12:10,566 p=14988 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 16:12:10,898 p=14988 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 16:12:10,918 p=14988 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 16:12:11,681 p=14988 u=root |  ok: [servidor-pdc]
+2021-01-26 16:12:11,695 p=14988 u=root |  TASK [samba4 : Init | Installing Required Packages (Please Wait....)] *********************************************************************************
+2021-01-26 16:12:17,933 p=14988 u=root |  changed: [servidor-pdc]
+2021-01-26 16:12:17,949 p=14988 u=root |  TASK [samba4 : Copy Veeam Repository] *****************************************************************************************************************
+2021-01-26 16:12:18,480 p=14988 u=root |  changed: [servidor-pdc]
+2021-01-26 16:12:18,490 p=14988 u=root |  TASK [samba4 : Install Veeam Backup] ******************************************************************************************************************
+2021-01-26 16:12:25,055 p=14988 u=root |  changed: [servidor-pdc]
+2021-01-26 16:12:25,057 p=14988 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 16:12:25,058 p=14988 u=root |  servidor-pdc               : ok=4    changed=3    unreachable=0    failed=0   
+2021-01-26 16:14:11,788 p=15178 u=root |   [WARNING]: The 'redis' python module (version 2.4.5 or newer) is required for the redis fact cache, 'pip install redis'
+
+2021-01-26 16:14:12,130 p=15178 u=root |  PLAY [all] ********************************************************************************************************************************************
+2021-01-26 16:14:12,156 p=15178 u=root |  TASK [Gathering Facts] ********************************************************************************************************************************
+2021-01-26 16:14:12,927 p=15178 u=root |  ok: [servidor-pdc]
+2021-01-26 16:14:12,937 p=15178 u=root |  TASK [samba4 : Configuration | Disable IPv6 1/2] ******************************************************************************************************
+2021-01-26 16:14:13,171 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:13,185 p=15178 u=root |  TASK [samba4 : Configuration | Disable IPv6 2/2] ******************************************************************************************************
+2021-01-26 16:14:13,411 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:13,425 p=15178 u=root |  TASK [samba4 : Configuration | Configure /etc/krb5.conf] **********************************************************************************************
+2021-01-26 16:14:14,026 p=15178 u=root |  ok: [servidor-pdc] => (item={'src': 'krb5.conf.j2', 'dest': '/etc/krb5.conf'})
+2021-01-26 16:14:14,037 p=15178 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 1/3] **********************************************************************************************
+2021-01-26 16:14:14,372 p=15178 u=root |  ok: [servidor-pdc] => (item={'src': 'chrony.conf.j2', 'dest': '/etc/chrony/chrony.conf'})
+2021-01-26 16:14:14,382 p=15178 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 2/3] **********************************************************************************************
+2021-01-26 16:14:14,555 p=15178 u=root |  ok: [servidor-pdc]
+2021-01-26 16:14:14,565 p=15178 u=root |  TASK [samba4 : Configuration | Configure NTP Chrony 3/3] **********************************************************************************************
+2021-01-26 16:14:15,135 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:15,147 p=15178 u=root |  TASK [samba4 : Configuration | Configure Bind9 1/3] ***************************************************************************************************
+2021-01-26 16:14:15,509 p=15178 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.j2', 'dest': '/etc/bind/named.conf'})
+2021-01-26 16:14:15,810 p=15178 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.local.j2', 'dest': '/etc/bind/named.conf.local'})
+2021-01-26 16:14:16,167 p=15178 u=root |  ok: [servidor-pdc] => (item={'src': 'named.conf.options.j2', 'dest': '/etc/bind/named.conf.options'})
+2021-01-26 16:14:16,580 p=15178 u=root |  changed: [servidor-pdc] => (item={'src': 'resolv.conf.j2', 'dest': '/etc/resolv.conf'})
+2021-01-26 16:14:16,594 p=15178 u=root |  TASK [samba4 : Configuration | Configure Bind9 2/3] ***************************************************************************************************
+2021-01-26 16:14:16,766 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:16,775 p=15178 u=root |  TASK [samba4 : Configuration | Configure Bind9 3/3] ***************************************************************************************************
+2021-01-26 16:14:17,352 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:17,365 p=15178 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 1/2] **********************************************************************************************
+2021-01-26 16:14:17,505 p=15178 u=root |  ok: [servidor-pdc]
+2021-01-26 16:14:17,518 p=15178 u=root |  TASK [samba4 : Configuration | Configure /etc/hosts 2/2] **********************************************************************************************
+2021-01-26 16:14:17,767 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:17,776 p=15178 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 1/2] **************************************************************************************
+2021-01-26 16:14:17,942 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:17,952 p=15178 u=root |  TASK [samba4 : Configuration | Configure /etc/nsswitch.conf 2/2] **************************************************************************************
+2021-01-26 16:14:18,093 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:18,108 p=15178 u=root |  TASK [samba4 : Configuration | Create folder /Servidor] ***********************************************************************************************
+2021-01-26 16:14:18,283 p=15178 u=root |  ok: [servidor-pdc]
+2021-01-26 16:14:18,295 p=15178 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Lixeira] ***************************************************************************************
+2021-01-26 16:14:18,440 p=15178 u=root |  ok: [servidor-pdc]
+2021-01-26 16:14:18,458 p=15178 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Usuarios] **************************************************************************************
+2021-01-26 16:14:18,618 p=15178 u=root |  ok: [servidor-pdc]
+2021-01-26 16:14:18,629 p=15178 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Backup] ****************************************************************************************
+2021-01-26 16:14:18,815 p=15178 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup)
+2021-01-26 16:14:18,934 p=15178 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/SAMBA4)
+2021-01-26 16:14:19,053 p=15178 u=root |  ok: [servidor-pdc] => (item=/Servidor/Backup/LOGS)
+2021-01-26 16:14:19,066 p=15178 u=root |  TASK [samba4 : Configuration | Create folder /Servidor/Auditoria] *************************************************************************************
+2021-01-26 16:14:19,226 p=15178 u=root |  ok: [servidor-pdc]
+2021-01-26 16:14:19,239 p=15178 u=root |  TASK [samba4 : Configuration | Configure /etc/samba/smb.conf] *****************************************************************************************
+2021-01-26 16:14:19,574 p=15178 u=root |  ok: [servidor-pdc] => (item={'src': 'smb.conf.j2', 'dest': '/etc/samba/smb.conf'})
+2021-01-26 16:14:19,584 p=15178 u=root |  TASK [samba4 : Configuration | Configure samba systemd 1/2] *******************************************************************************************
+2021-01-26 16:14:19,913 p=15178 u=root |  ok: [servidor-pdc] => (item={'src': 'samba.service.j2', 'dest': '/etc/systemd/system/samba.service'})
+2021-01-26 16:14:19,923 p=15178 u=root |  TASK [samba4 : Configuration | Configure samba systemd 2/2] *******************************************************************************************
+2021-01-26 16:14:20,784 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:20,799 p=15178 u=root |  TASK [samba4 : Configuration | Enable bind9 systemd and start it] *************************************************************************************
+2021-01-26 16:14:23,837 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:23,856 p=15178 u=root |  TASK [samba4 : Configuration | Update DNS Records] ****************************************************************************************************
+2021-01-26 16:14:32,071 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:32,080 p=15178 u=root |  TASK [samba4 : Configuration | RPC Rights Grant 1/2] **************************************************************************************************
+2021-01-26 16:14:34,897 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:34,910 p=15178 u=root |  TASK [samba4 : Configuration | RPC Rights Grant 2/2] **************************************************************************************************
+2021-01-26 16:14:35,765 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:35,776 p=15178 u=root |  TASK [samba4 : Configuration | Change "/Servidor" owner] **********************************************************************************************
+2021-01-26 16:14:35,964 p=15178 u=root |  changed: [servidor-pdc]
+2021-01-26 16:14:35,967 p=15178 u=root |  PLAY RECAP ********************************************************************************************************************************************
+2021-01-26 16:14:35,968 p=15178 u=root |  servidor-pdc               : ok=27   changed=15   unreachable=0    failed=0   

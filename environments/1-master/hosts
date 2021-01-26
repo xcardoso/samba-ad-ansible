@@ -1,2 +1,7 @@
+[master]
+servidor-pdc  ansible_ssh_host=192.168.15.9
+
+#[nodes]
+
 [all]
-servidor-pdc  ansible_ssh_host=192.168.15.132
+servidor-pdc  ansible_ssh_host=192.168.15.9
