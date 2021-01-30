@@ -40,7 +40,7 @@ Edite o arquivo samba-ad-ansible/env/1-master/group_vars/all/master_configuratio
 ## 2.Passo
 
 ```
-Edite o arquivo samba-ad-ansible/env/1-master/hosts o servidor
+Edite o arquivo samba-ad-ansible/env/1-master/hosts com os dados do servidor
 ```
 
 ## 3.Passo
