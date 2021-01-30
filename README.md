@@ -13,11 +13,11 @@ Para maiores informações entre em contato pelo e-mail yuri.bucci@outlook.com
 
 
 ## Requerimentos
-#
+
 + [Ansible](https://docs.ansible.com/ansible/latest/index.html)
 
 ## Como Usar
-#
+
 ## Tags Disponíveis
 ```
 init - Instala os pacotes necessários para compilação
