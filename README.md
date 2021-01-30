@@ -18,7 +18,7 @@ Para maiores informações entre em contato pelo e-mail yuri.bucci@outlook.com
 
 ## Como Usar
 
-## Tags Disponíveis
+**Tags Disponíveis**
 ```
 init - Instala os pacotes necessários para compilação
 
