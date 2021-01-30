@@ -55,3 +55,9 @@ samba:
   # DNS1 and DN2 Forwarder for Bind9
   dns1_forwarder: "8.8.8.8" 
   dns2_forwarder: "8.8.4.4"
+
+  # Password Complexity
+  pwd_min_length: "6"
+  pwd_min_age: "0"
+  pwd_max_age: "60"
+  pwd_history_length: "3"

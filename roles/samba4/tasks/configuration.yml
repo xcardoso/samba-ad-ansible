@@ -188,3 +188,16 @@
     owner: root
     group: "Domain Admins"
     recurse: yes
+
+- name: Configuration | Configure Permissions of Folders
+  shell: |
+       samba-tool ntacl set "O:LAG:DAD:PAI(A;OICI;0x001f01ff;;;DA)(A;;0x001200a1;;;DU)" {{ fileserver.dir }}/Usuarios
+       samba-tool ntacl set "O:LAG:DAD:PAI(A;OICI;0x001f01ff;;;DA)(A;OICI;0x001201bf;;;DU)" {{ fileserver.dir }}/Lixeira
+       samba-tool ntacl set "O:LAG:DAD:PAI(A;OICI;0x001f01ff;;;DA)(A;OICI;0x001201bf;;;DU)" {{ fileserver.dir }}/Suporte
+
+- name: Configuration | Configure Password Complexity
+  shell: |
+       samba-tool domain passwordsettings set --min-pwd-length={{ samba.pwd_min_length }}
+       samba-tool domain passwordsettings set --min-pwd-age={{ samba.pwd_min_age }}
+       samba-tool domain passwordsettings set --max-pwd-age={{ samba.pwd_max_age }}
+       samba-tool domain passwordsettings set --history-length={{ samba.pwd_history_length }}
