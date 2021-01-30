@@ -4,7 +4,7 @@ Este projeto tem como intuíto facilitar a vida de **SysAdmins**, esta é uma ve
 
 
 ## Comercialização
-#
+
 **O compartilhamento e edição desta versão é permitido desde que se mantenha os direitos autorais**
 
 **Comercializo uma versão completa** á qual é disponibilizada DCs adicionais com sysvol em cluster, FileServer, Upgrades de Versão homologadas mantendo sempre o seu ambiente atualizado.
