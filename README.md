@@ -60,7 +60,7 @@ ansible-playbook -i env/1-master/ --tags=all
 
 * SEMPRE ALTERE AS PERMISSÕES COM O COMANDO 'chown root.'Domain Admins' folder/ -R' (ASPAS DUPLAS EM DOMAIN ADMINS)
 
-#
+
 ## BACKUP
 
 * UTILIZE O VEEAMBACKUP ATRAVES DO COMANDO 'veeamconfig ui'
@@ -68,7 +68,7 @@ ansible-playbook -i env/1-master/ --tags=all
 * SEMPRE UTILIZE O BACKUP A NIVEL DE PARTICAO E/OU LVM PARA QUE AS PERMISSOES EXTENDIDAS FUNCIONEM
 
 * ADICIONE OS SCRIPTS NA CRIAÇÃO DO BACKUP: /etc/veeam/scripts/pre.sh (REALIZA O BACKUP DO SAMBA4) E /etc/veeam/scripts/email.sh (ENVIA O E-MAIL)
-#
+
 ## COMANDOS UTEIS
 
 * samba-tool ntacl sysvolreset - RESETA AS PERMISSÕES DAS PASTAS SYSVOL E GPOS
@@ -78,7 +78,6 @@ ansible-playbook -i env/1-master/ --tags=all
 * samba-tool dbcheck --reindex (REINDEXA O BANCO DE DADOS)
 
 * samba_dnsupdate --all-names --verbose (ATUALIZA O DNS BIND)
-#
 
 ## ADMINISTRACAO DO DOMINIO
 
